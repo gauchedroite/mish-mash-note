@@ -27,7 +27,7 @@
   #editor .bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
   .hidden{display:none}
 </style></head><body>
-<header><div class="inner"><div class="tabs" id="pages"></div><button class="btn" id="edit-data">edit data.json</button></div></header>
+<header><div class="inner"><div class="tabs" id="pages"></div><span><button class="btn" id="open-app">app folder</button> <button class="btn" id="edit-data">edit data.json</button></span></div></header>
 <div class="wrap"><div id="groups"></div></div>
 <div id="overlay"><div id="editor">
   <div class="bar"><b id="ed-title"></b><span><button class="btn" id="ed-del" title="delete file">delete</button> <button class="btn" id="ed-save">save</button> <button class="btn" id="ed-cancel">cancel</button></span></div>
@@ -150,6 +150,7 @@ async function openDataJson(){
   $('#overlay').classList.add('show');
 }
 $('#edit-data').onclick=openDataJson;
+$('#open-app').onclick=async()=>fetch('/api/open?path='+encodeURIComponent(await (await fetch('/api/root')).json()));
 
 $('#ed-save').onclick=async()=>{
   const url=edMode==='data'?'/api/datafile':'/api/file?path='+encodeURIComponent(edPath);

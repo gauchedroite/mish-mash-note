@@ -10,7 +10,7 @@ def safe_path(p):
     """Reject anything that escapes its allowed root. Single-user localhost;
     this is just to stop accidents, not a real trust boundary."""
     p = os.path.normpath(os.path.abspath(p))
-    for root in ALLOW_ROOTS:
+    for root in ALLOW_ROOTS + [ROOT]:
         if p == root or p.startswith(root + os.sep):
             return p
     return None
@@ -68,6 +68,8 @@ class H(BaseHTTPRequestHandler):
         if u.path == "/api/data":
             self._send(200, json.dumps(load_data()).encode())
             return
+        if u.path == "/api/root":
+            self._send(200, json.dumps(ROOT).encode()); return
         if u.path == "/api/datafile":
             with open(DATA, "r", encoding="utf-8") as f:
                 self._send(200, f.read().encode(), "text/plain; charset=utf-8")
