@@ -1,0 +1,49 @@
+{
+  "pages": [
+    {
+      "id": "home",
+      "title": "Home",
+      "groups": [
+        "reading",
+        "notes",
+        "notes 2"
+      ]
+    },
+    {
+      "id": "homeer",
+      "title": "Homeer",
+      "groups": [
+        "notes"
+      ]
+    }
+  ],
+  "groups": {
+    "reading": {
+      "title": "Reading",
+      "kind": "link",
+      "max": 0,
+      "sort": "manual",
+      "links": [
+        {
+          "label": "Example",
+          "url": "https://example.com",
+          "order": 0
+        }
+      ]
+    },
+    "notes": {
+      "title": "Local notes",
+      "kind": "file",
+      "dir": "C:/me/notes",
+      "max": 5,
+      "sort": "manual"
+    },
+    "notes 2": {
+      "title": "Second hand notes",
+      "kind": "file",
+      "dir": "C:/me/notes",
+      "max": 0,
+      "sort": "manual"
+    }
+  }
+}

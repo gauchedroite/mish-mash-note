@@ -1,0 +1,191 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>notes</title>
+<style>
+  body{font:14px/1.5 system-ui,sans-serif;margin:0;padding:0;color:#222}
+  header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ddd;padding:2px 0;margin-bottom:16px}
+  header .inner{max-width:920px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;width:100%;box-sizing:border-box}
+  .wrap{max-width:920px;margin:0 auto;padding:0 16px}
+  header .tabs a{margin-right:12px;color:#0366d6;text-decoration:none;font-size:14px}
+  header .tabs a.active{font-weight:bold}
+  header .tabs a:hover{text-decoration:underline}
+  h1{font-size:18px}
+  .page-tabs button{padding:4px 10px;margin-right:6px;cursor:pointer}
+  .page-tabs button.active{font-weight:bold}
+  .group{padding:0;margin-bottom:8px}
+  .group h2{font-size:15px;margin:0;display:flex;justify-content:space-between;align-items:center;background:antiquewhite}
+  .group .meta{font-size:12px;color:#888;font-weight:normal}
+  ul{list-style:none;padding:0;margin:0}
+  li{display:flex;gap:8px;align-items:center}
+  li a{color:#0366d6;text-decoration:none}
+  li a:hover{text-decoration:underline}
+  .btn{font-size:12px;padding:2px 8px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fafafa}
+  .btn:hover{background:#eee}
+  #overlay{position:fixed;inset:0;background:rgba(0,0,0,.3);display:none;align-items:center;justify-content:center}
+  #overlay.show{display:flex}
+  #editor{background:#fff;border-radius:6px;width:80vw;height:80vh;display:flex;flex-direction:column;padding:12px;box-sizing:border-box}
+  #editor textarea{flex:1;font:13px/1.4 ui-monospace,monospace;width:100%;box-sizing:border-box}
+  #editor .bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+  .hidden{display:none}
+</style></head><body>
+<header><div class="inner"><div class="tabs" id="pages"></div><button class="btn" id="edit-data">edit data.json</button></div></header>
+<div class="wrap"><div id="groups"></div></div>
+<div id="overlay"><div id="editor">
+  <div class="bar"><b id="ed-title"></b><span><button class="btn" id="ed-del" title="delete file">delete</button> <button class="btn" id="ed-save">save</button> <button class="btn" id="ed-cancel">cancel</button></span></div>
+  <textarea id="ed-text" spellcheck="false"></textarea>
+  <div style="font-size:11px;color:#888;margin-top:6px">Ctrl+S to save</div>
+</div></div>
+<script>
+let DATA={}, curPage=null, edPath=null, edMode='file', groupPage={}, listCache={};
+
+const $=s=>document.querySelector(s);
+const sortLinks=g=>{
+  const L=[...g.links];
+  if(g.sort==='alpha') L.sort((a,b)=>a.label.toLowerCase().localeCompare(b.label.toLowerCase()));
+  else L.sort((a,b)=>(a.order||0)-(b.order||0));
+  return L;
+};
+
+async function load(){
+  DATA=await (await fetch('/api/data')).json();
+  listCache={};
+  if(location.hash && DATA.pages.some(p=>p.id===location.hash.slice(1))) curPage=location.hash.slice(1);
+  renderPages();
+  renderGroups();
+}
+
+function renderPages(){
+  const el=$('#pages'); el.innerHTML='';
+  if(!curPage && DATA.pages[0]) curPage=DATA.pages[0].id;
+  DATA.pages.forEach(p=>{
+    const a=document.createElement('a'); a.href='#'+p.id; a.textContent=p.title;
+    if(p.id===curPage) a.className='active';
+    a.onclick=e=>{e.preventDefault();curPage=p.id;location.hash=p.id;renderPages();renderGroups();};
+    el.appendChild(a);
+  });
+}
+
+async function renderGroups(){
+  const el=$('#groups'); el.innerHTML='';
+  const page=DATA.pages.find(p=>p.id===curPage);
+  if(!page) return;
+  const groups=page.groups.map(gid=>DATA.groups[gid]).filter(Boolean);
+  const lists=await Promise.all(groups.map(g=>
+    g.kind==='file'
+      ? (listCache[g.dir] || (listCache[g.dir]=fetch('/api/list?path='+encodeURIComponent(g.dir)).then(r=>r.ok?r.json():[]).catch(()=>[])))
+      : null
+  ));
+  groups.forEach((g,i)=>{
+    const box=document.createElement('div'); box.className='group';
+    const h=document.createElement('h2');
+    const meta=document.createElement('span'); meta.className='meta'; meta.textContent=`${g.sort==='alpha'?'A–Z':''}`;
+    h.innerHTML=`<span>${g.title}</span>`;
+    h.appendChild(meta);
+    if(g.kind==='file'){
+      h.style.cursor='pointer'; h.title='Open folder';
+      h.querySelector('span').onclick=()=>fetch('/api/open?path='+encodeURIComponent(g.dir));
+      const add=document.createElement('button'); add.className='btn'; add.textContent='+ add file';
+      add.onclick=()=>addFile(g);
+      h.appendChild(add);
+    }
+    box.appendChild(h);
+    const ul=document.createElement('ul');
+    let sorted;
+    if(g.kind==='file'){
+      const names=lists[i]||[];
+      sorted=names.map(n=>({label:n, path:g.dir+'/'+n}));
+    } else {
+      sorted=sortLinks(g);
+    }
+    let shown=sorted, row=null;
+    if(g.max>0 && sorted.length>g.max){
+      const pages=Math.ceil(sorted.length/g.max);
+      const cur=Math.min(groupPage[i]||0, pages-1);
+      groupPage[i]=cur;
+      shown=sorted.slice(cur*g.max, cur*g.max+g.max);
+      row=document.createElement('div');
+      for(let pgi=0;pgi<pages;pgi++){
+        const a=document.createElement('a'); a.href='#'; a.textContent=pgi+1; a.style.marginRight='8px'; a.style.textDecoration='none';
+        if(pgi===cur) a.style.background='yellow';
+        a.onclick=e=>{e.preventDefault();groupPage[i]=pgi;renderGroups();};
+        row.appendChild(a);
+      }
+    }
+    shown.forEach(l=>{
+      const li=document.createElement('li');
+      if(g.kind==='link'){
+        const a=document.createElement('a'); a.href=l.url; a.target='_blank'; a.textContent=l.label;
+        li.appendChild(a);
+      } else {
+        const a=document.createElement('a'); a.href='#'; a.textContent=l.label;
+        a.onclick=async e=>{
+          e.preventDefault();
+          if(e.shiftKey){fetch('/api/open?path='+encodeURIComponent(l.path));return;}
+          await openEditor(l.path);
+        };
+        li.append(a);
+      }
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+    if(row) box.appendChild(row);
+    el.appendChild(box);
+  });
+}
+
+async function openEditor(path){
+  edMode='file'; edPath=path;
+  $('#ed-del').style.display='';
+  const txt=await (await fetch('/api/file?path='+encodeURIComponent(path))).text();
+  $('#ed-title').textContent=path.split(/[\\/]/).pop();
+  $('#ed-text').value=txt;
+  $('#overlay').classList.add('show');
+}
+
+async function openDataJson(){
+  edMode='data';
+  $('#ed-del').style.display='none';
+  const txt=await (await fetch('/api/datafile')).text();
+  $('#ed-title').textContent='data.json';
+  $('#ed-text').value=txt;
+  $('#overlay').classList.add('show');
+}
+$('#edit-data').onclick=openDataJson;
+
+$('#ed-save').onclick=async()=>{
+  const url=edMode==='data'?'/api/datafile':'/api/file?path='+encodeURIComponent(edPath);
+  const r=await fetch(url,{method:'POST',body:$('#ed-text').value});
+  if(!r.ok){alert(await r.text());return;}
+  $('#overlay').classList.remove('show');
+  if(edMode==='data') await load();
+};
+$('#ed-cancel').onclick=()=>$('#overlay').classList.remove('show');
+
+$('#ed-del').onclick=async()=>{
+  if(edMode!=='file'||!edPath) return;
+  if(!confirm('Delete '+edPath.split(/[\\/]/).pop()+'?')) return;
+  await fetch('/api/delfile?path='+encodeURIComponent(edPath));
+  listCache={};
+  $('#overlay').classList.remove('show');
+  renderGroups();
+};
+
+$('#ed-text').addEventListener('keydown',e=>{
+  if(e.key==='s'&&(e.ctrlKey||e.metaKey)){e.preventDefault();$('#ed-save').click();}
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&$('#overlay').classList.contains('show')){$('#ed-cancel').click();}
+});
+
+async function addFile(g){
+  const name=prompt('New file name (e.g. idea):');
+  if(!name) return;
+  const r=await fetch('/api/newfile?dir='+encodeURIComponent(g.dir)+'&name='+encodeURIComponent(name),{method:'POST'});
+  if(!r.ok){alert(await r.text());return;}
+  const {path}=await r.json();
+  listCache={};
+  renderGroups();
+  openEditor(path);
+}
+
+load();
+</script></body></html>
