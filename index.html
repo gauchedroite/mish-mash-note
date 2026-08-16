@@ -2,7 +2,7 @@
 <html><head><meta charset="utf-8"><title>notes</title>
 <style>
   body{font:14px/1.5 system-ui,sans-serif;margin:0;padding:0;color:#222}
-  header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ddd;padding:2px 16px;margin-bottom:16px}
+  header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ddd;padding:2px 16px;margin-bottom:16px;background:bisque;position:sticky;top:0;z-index:10}
   header .inner{margin:0 auto;display:flex;justify-content:space-between;align-items:center;width:100%;box-sizing:border-box}
   .wrap{margin:0 auto;padding:0 16px}
   #groups{column-width:330px;column-count:5;column-gap:12px}
@@ -16,7 +16,7 @@
   .group h2{font-size:15px;margin:0;display:flex;justify-content:space-between;align-items:center;background:antiquewhite}
   .group .meta{font-size:12px;color:#888;font-weight:normal}
   ul{list-style:none;padding:0;margin:0}
-  li{display:flex;gap:8px;align-items:center;min-width:0}
+  li{display:flex;gap:8px;align-items:center;min-width:0;line-height:1.2}
   li a{color:#0366d6;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
   li a:hover{text-decoration:underline}
   .btn{font-size:12px;padding:2px 8px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fafafa}
@@ -33,17 +33,23 @@
 <div id="overlay"><div id="editor">
   <div class="bar"><b id="ed-title"></b><span><button class="btn" id="ed-del" title="delete file">delete</button> <button class="btn" id="ed-save">save</button> <button class="btn" id="ed-cancel">cancel</button></span></div>
   <textarea id="ed-text" spellcheck="false"></textarea>
-  <div style="font-size:11px;color:#888;margin-top:6px">Ctrl+S to save</div>
+  <div style="font-size:11px;color:#888;margin-top:6px">Ctrl+S to save &nbsp;|&nbsp; sort options: A–Z (alpha), Z–A (alpha-desc), newest (modified), oldest (modified-asc), reverse, manual</div>
 </div></div>
 <script>
 let DATA={}, curPage=null, edPath=null, edMode='file', groupPage={}, listCache={};
 
 const $=s=>document.querySelector(s);
-const sortLinks=g=>{
-  const L=[...g.links];
-  if(g.sort==='alpha') L.sort((a,b)=>a.label.toLowerCase().localeCompare(b.label.toLowerCase()));
-  else L.sort((a,b)=>(a.order||0)-(b.order||0));
-  return L;
+const sortLabel={alpha:'A–Z','alpha-desc':'Z–A',modified:'newest','modified-asc':'oldest',reverse:'reverse'};
+const applySort=(items,sort)=>{
+  const L=[...items];
+  switch(sort){
+    case 'alpha': return L.sort((a,b)=>a.label.toLowerCase().localeCompare(b.label.toLowerCase()));
+    case 'alpha-desc': return L.sort((a,b)=>b.label.toLowerCase().localeCompare(a.label.toLowerCase()));
+    case 'modified': return L.sort((a,b)=>(b.mtime||0)-(a.mtime||0));
+    case 'modified-asc': return L.sort((a,b)=>(a.mtime||0)-(b.mtime||0));
+    case 'reverse': return L.reverse();
+    case 'manual': default: return L.sort((a,b)=>(a.order??0)-(b.order??0));
+  }
 };
 
 async function load(){
@@ -69,7 +75,11 @@ async function renderGroups(){
   const el=$('#groups'); el.innerHTML='';
   const page=DATA.pages.find(p=>p.id===curPage);
   if(!page) return;
-  const groups=page.groups.map(gid=>DATA.groups[gid]).filter(Boolean);
+  const groups=page.groups.map(g=>{
+    const o=typeof g==='string'?{id:g}:g;
+    const base=DATA.groups[o.id];
+    return base&&{...base,...o};
+  }).filter(Boolean);
   const lists=await Promise.all(groups.map(g=>
     g.kind==='file'
       ? (listCache[g.dir] || (listCache[g.dir]=fetch('/api/list?path='+encodeURIComponent(g.dir)).then(r=>r.ok?r.json():[]).catch(()=>[])))
@@ -78,7 +88,7 @@ async function renderGroups(){
   groups.forEach((g,i)=>{
     const box=document.createElement('div'); box.className='group';
     const h=document.createElement('h2');
-    const meta=document.createElement('span'); meta.className='meta'; meta.textContent=`${g.sort==='alpha'?'A–Z':''}`;
+    const meta=document.createElement('span'); meta.className='meta'; meta.textContent=sortLabel[g.sort]||'';
     h.innerHTML=`<span>${g.title}</span>`;
     h.appendChild(meta);
     if(g.kind==='file'){
@@ -92,11 +102,12 @@ async function renderGroups(){
     const ul=document.createElement('ul');
     let sorted;
     if(g.kind==='file'){
-      const names=lists[i]||[];
-      sorted=names.map(n=>({label:n, path:g.dir+'/'+n}));
+      const entries=lists[i]||[];
+      sorted=entries.map(e=>({label:e.name, path:g.dir+'/'+e.name, mtime:e.mtime}));
     } else {
-      sorted=sortLinks(g);
+      sorted=g.links.map(l=>({label:l.label, url:l.url, order:l.order||0}));
     }
+    sorted=applySort(sorted,g.sort);
     let shown=sorted, row=null;
     if(g.max>0 && sorted.length>g.max){
       const pages=Math.ceil(sorted.length/g.max);
@@ -107,7 +118,7 @@ async function renderGroups(){
       for(let pgi=0;pgi<pages;pgi++){
         const a=document.createElement('a'); a.href='#'; a.textContent=pgi+1; a.style.marginRight='8px'; a.style.textDecoration='none';
         if(pgi===cur) a.style.background='yellow';
-        a.onclick=e=>{e.preventDefault();groupPage[i]=pgi;renderGroups();};
+        a.onclick=e=>{e.preventDefault();const y=scrollY;groupPage[i]=pgi;renderGroups().then(()=>scrollTo(0,y));};
         row.appendChild(a);
       }
     }

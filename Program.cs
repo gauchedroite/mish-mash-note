@@ -59,11 +59,11 @@ app.MapGet("/api/datafile", () => Results.File(dataPath, "text/plain; charset=ut
 
 app.MapGet("/api/list", (string? path) =>
 {
-    if (path is null || !SafePath(path) || !Directory.Exists(path)) return Results.Json(Array.Empty<string>());
-    var names = Directory.GetFiles(path)
-        .Select(Path.GetFileName!)
-        .OrderBy(n => n, StringComparer.OrdinalIgnoreCase);
-    return Results.Json(names);
+    if (path is null || !SafePath(path) || !Directory.Exists(path)) return Results.Json(Array.Empty<object>());
+    var entries = Directory.GetFiles(path)
+        .Select(p => new { name = Path.GetFileName(p), mtime = new DateTimeOffset(File.GetLastWriteTimeUtc(p)).ToUnixTimeSeconds() })
+        .OrderBy(e => e.name, StringComparer.OrdinalIgnoreCase);
+    return Results.Json(entries);
 });
 
 app.MapGet("/api/file", (string? path) =>

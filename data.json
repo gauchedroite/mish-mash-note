@@ -4,54 +4,3604 @@
       "id": "home",
       "title": "Home",
       "groups": [
-        "reading",
-        "notes",
-        "notes",
-        "notes",
-        "notes",
-        "notes",
-        "notes",
-        "notes",
-        "notes",
-        "notes",
-        "notes"
-      ]
-    },
-    {
-      "id": "homeer",
-      "title": "Homeer",
-      "groups": [
-        "notes"
+        {
+          "id": "Daily"
+        },
+        {
+          "id": "Artists"
+        },
+        {
+          "id": "Graphics"
+        },
+        {
+          "id": "Movies"
+        },
+        {
+          "id": "Game"
+        },
+        {
+          "id": "Current_Interest"
+        },
+        {
+          "id": "Video_of_Game"
+        },
+        {
+          "id": "NLP"
+        },
+        {
+          "id": "References"
+        },
+        {
+          "id": "Vendredi"
+        },
+        {
+          "id": "Game_Design"
+        },
+        {
+          "id": "Games_Builders"
+        },
+        {
+          "id": "Games_Dev"
+        },
+        {
+          "id": "Misc_Dev"
+        },
+        {
+          "id": "Game_AI"
+        },
+        {
+          "id": "Music"
+        },
+        {
+          "id": "RPG"
+        },
+        {
+          "id": "Cool"
+        },
+        {
+          "id": "wonderfl",
+          "max": 20
+        },
+        {
+          "id": "Adventure"
+        },
+        {
+          "id": "Games"
+        },
+        {
+          "id": "Flash_Dev"
+        },
+        {
+          "id": "Games_Misc"
+        },
+        {
+          "id": "haxe"
+        },
+        {
+          "id": "My_Docs"
+        },
+        {
+          "id": "iOS"
+        },
+        {
+          "id": "After_Effects"
+        },
+        {
+          "id": "My_Sites"
+        },
+        {
+          "id": "Programming"
+        },
+        {
+          "id": "3D"
+        }
       ]
     }
   ],
   "groups": {
-    "reading": {
-      "title": "Reading",
+    "Daily": {
+      "title": "Daily",
       "kind": "link",
-      "max": 0,
-      "sort": "manual",
       "links": [
         {
-          "label": "Example",
-          "url": "https://example.com",
-          "order": 0
+          "label": "Fucking Homepage",
+          "url": "http://fuckinghomepage.com/"
+        },
+        {
+          "label": "Ethan Siegel",
+          "url": "https://medium.com/@startswithabang"
+        },
+        {
+          "label": "Feedly",
+          "url": "http://cloud.feedly.com/#my"
+        },
+        {
+          "label": "APOD",
+          "url": "http://apod.nasa.gov/apod/"
         }
       ]
     },
-    "notes": {
-      "title": "Local notes",
-      "kind": "file",
-      "dir": "C:/me/notes",
-      "max": 5,
-      "sort": "manual"
+    "Artists": {
+      "title": "Artists",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Lines and Colors",
+          "url": "http://linesandcolors.com/"
+        },
+        {
+          "label": "Matthieu Forichon",
+          "url": "https://www.forichon.com/"
+        },
+        {
+          "label": "Kim Jung Gi",
+          "url": "http://www.kimjunggi.net/porfolio/"
+        },
+        {
+          "label": "Zivko Kondic",
+          "url": "https://www.artstation.com/artist/zhille"
+        },
+        {
+          "label": "Neil Campbell Ross",
+          "url": "http://limbolo.blogspot.ca/"
+        },
+        {
+          "label": "Jakub Rozalski",
+          "url": "https://jakubrozalski.artstation.com/projects"
+        },
+        {
+          "label": "In Pursuit of Art",
+          "url": "http://www.inpursuitofart.com/blog/"
+        },
+        {
+          "label": "Louie del Carmen",
+          "url": "http://www.louiedelcarmen.com/gallery/"
+        },
+        {
+          "label": "Eugène Galien-Laloue",
+          "url": "https://one1more2time3.wordpress.com/2016/09/13/eugene-galien-laloue-9/"
+        },
+        {
+          "label": "Yelen Ayé",
+          "url": "https://yelenaye.wordpress.com/"
+        },
+        {
+          "label": "Terry Miura",
+          "url": "http://terrymiura.blogspot.ca/2015/01/color-systems-center-of-pie.html"
+        },
+        {
+          "label": "Kurobot (2)",
+          "url": "https://www.artstation.com/artist/kurobot"
+        },
+        {
+          "label": "Cali Rezo",
+          "url": "http://www.calirezo.com/illustrations-peinture-numerique-digital-painting.html"
+        },
+        {
+          "label": "Jeremiah Humphries (DA favorites)",
+          "url": "http://j-humphries.deviantart.com/favourites/"
+        },
+        {
+          "label": "Jaime Jones",
+          "url": "http://www.artpad.org/"
+        },
+        {
+          "label": "Sycra - How to draw hands",
+          "url": "http://www.youtube.com/watch?v=qUbt1l4tBJg"
+        },
+        {
+          "label": "Mike Koizumi",
+          "url": "http://www.youtube.com/user/koizu"
+        },
+        {
+          "label": "_browse me 2",
+          "url": "http://vaghauk.deviantart.com/favourites/?offset=288"
+        },
+        {
+          "label": "Feng Zhu Design",
+          "url": "http://www.fengzhudesign.com/"
+        },
+        {
+          "label": "Afuchan (DA)",
+          "url": "http://afuchan.deviantart.com/favourites/?offset=96"
+        },
+        {
+          "label": "Enliighten",
+          "url": "http://enliighten.com/"
+        },
+        {
+          "label": "goodbrush",
+          "url": "http://www.goodbrush.com/"
+        },
+        {
+          "label": "_browse me",
+          "url": "http://ben-andrews.deviantart.com/favourites/?offset=288"
+        },
+        {
+          "label": "sundragon83 (DA favorites)",
+          "url": "http://sundragon83.deviantart.com/favourites/"
+        },
+        {
+          "label": "Boom Studios",
+          "url": "http://www.boom-studios.com/"
+        },
+        {
+          "label": "Ralf Parker",
+          "url": "https://ralphparker.wordpress.com/"
+        },
+        {
+          "label": "Edgar Payne",
+          "url": "https://www.google.com/search?q=Edgar+Payne&amp;safe=off&amp;espv=2&amp;biw=1538&amp;bih=1115&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0CAYQ_AUoAWoVChMIioC87J2dxwIViDw-Ch2qRgq_"
+        },
+        {
+          "label": "James Gurney",
+          "url": "http://jamesgurney.com/site/"
+        },
+        {
+          "label": "Kyle T Webster",
+          "url": "https://gumroad.com/kyletwebster"
+        },
+        {
+          "label": "Alan Owen",
+          "url": "https://www.youtube.com/channel/UCjfgIsGMmaGtG8DAgmdeYng/videos"
+        },
+        {
+          "label": "Jakub Rozalski",
+          "url": "https://jakubrozalski.artstation.com/"
+        },
+        {
+          "label": "Goodbye, daddy",
+          "url": "http://www.pixiv.net/member_illust.php?mode=manga&amp;illust_id=25735143"
+        },
+        {
+          "label": "Chad Greene",
+          "url": "http://www.cg-arteezt.com/#!2d-art-digital-misc/cuns"
+        },
+        {
+          "label": "Marie-Lou Desmeules",
+          "url": "http://www.marie-loudesmeules.com/"
+        },
+        {
+          "label": "Robert Gonsalves",
+          "url": "http://www.boredpanda.com/magic-realism-paintings-rob-gonsalves/"
+        },
+        {
+          "label": "wilhelm m.busch",
+          "url": "http://one1more2time3.wordpress.com/?s=wilhelm+m.busch"
+        },
+        {
+          "label": "Simon Stålenhag",
+          "url": "http://simonstalenhag.se/"
+        },
+        {
+          "label": "Pietro Antognioni",
+          "url": "http://pietro-ant.deviantart.com/favourites/?offset=288"
+        },
+        {
+          "label": "Virtual plein-air",
+          "url": "http://www.tumblr.com/tagged/virtual-plein-air"
+        },
+        {
+          "label": "Kurobot",
+          "url": "http://kurobot.deviantart.com/gallery/"
+        },
+        {
+          "label": "_browse me 4",
+          "url": "http://laurelineparis.deviantart.com/favourites/39258093"
+        },
+        {
+          "label": "Cali Rezo - making of",
+          "url": "http://www.calirezo.com/pas-a-pas-peinture-numerique-making-of-digital-painting.html"
+        },
+        {
+          "label": "nicponim",
+          "url": "https://www.facebook.com/nicponimsky/photos_stream"
+        },
+        {
+          "label": "DrawCrowd",
+          "url": "http://drawcrowd.com/"
+        },
+        {
+          "label": "zedig",
+          "url": "http://zedig.deviantart.com/gallery/"
+        },
+        {
+          "label": "Ferdinand Kreozot",
+          "url": "http://www.ferdinandkreozot.blogspot.ca/"
+        }
+      ]
     },
-    "notes 2": {
-      "title": "Second hand notes",
-      "kind": "file",
-      "dir": "C:/me/notes",
-      "max": 0,
-      "sort": "manual"
+    "Graphics": {
+      "title": "Graphics",
+      "kind": "link",
+      "links": [
+        {
+          "label": "The G3D Innovation Engine",
+          "url": "https://casual-effects.com/g3d/www/"
+        },
+        {
+          "label": "Real-Time Rendering",
+          "url": "http://www.realtimerendering.com/blog/"
+        },
+        {
+          "label": "Adrian  Courrèges",
+          "url": "http://www.adriancourreges.com/projects/"
+        },
+        {
+          "label": "CryPixels",
+          "url": "https://crysoftware.itch.io/crypixels"
+        },
+        {
+          "label": "Game Art Tricks",
+          "url": "https://simonschreibt.de/game-art-tricks/"
+        },
+        {
+          "label": "Rebelle | real media painting",
+          "url": "http://www.escapemotions.com/products/rebelle/index.php"
+        },
+        {
+          "label": "Edan Kwan",
+          "url": "http://edankwan.com/"
+        },
+        {
+          "label": "ShaderToy",
+          "url": "https://www.shadertoy.com/"
+        },
+        {
+          "label": "DeepArt",
+          "url": "http://deepart.io/"
+        },
+        {
+          "label": "3D ‘Split Depth’",
+          "url": "https://medium.com/@jessehead/tips-for-making-a-3d-split-depth-video-a495225d47bd#.k83nrq10m"
+        },
+        {
+          "label": "blender.org - Home",
+          "url": "http://www.blender.org/"
+        },
+        {
+          "label": "Of Wiggle Photography (++)",
+          "url": "http://fulmicoton.com/posts/wiggle/"
+        },
+        {
+          "label": "Convert a flat image into a 3D stereo...",
+          "url": "http://www.youtube.com/watch?v=3r4M_KHt6aw"
+        },
+        {
+          "label": "MyPaint",
+          "url": "http://mypaint.intilinux.com/"
+        },
+        {
+          "label": "Photoshop CS5 Mixer Brush Tips and Tricks",
+          "url": "http://gapriest.blogspot.ca/2010/08/photoshop-cs5-mixer-brush-tips-and.html"
+        },
+        {
+          "label": "Blender 2.6 Tutorials (YouTube)",
+          "url": "http://www.youtube.com/user/cgboorman/videos"
+        },
+        {
+          "label": "ChaosPro",
+          "url": "http://www.chaospro.de/index.php"
+        },
+        {
+          "label": "Alchemy",
+          "url": "http://al.chemy.org/"
+        },
+        {
+          "label": "tcoxon/droste",
+          "url": "https://github.com/tcoxon/droste"
+        },
+        {
+          "label": "Drosde WebGL",
+          "url": "http://wakaba.c3.cx/w/escher_droste.html"
+        },
+        {
+          "label": "Fractal Lab",
+          "url": "http://hirnsohle.de/test/fractalLab/"
+        },
+        {
+          "label": "Dr.Oste",
+          "url": "http://sourceforge.net/projects/drdroste/?source=dlp"
+        },
+        {
+          "label": "Image Composite Editor",
+          "url": "http://research.microsoft.com/en-us/um/redmond/projects/ice/"
+        },
+        {
+          "label": "Artificial Sketching",
+          "url": "http://www.upvector.com/?section=Lab&amp;subsection=Artificial%20Sketching"
+        },
+        {
+          "label": "Adobe Color CC",
+          "url": "https://color.adobe.com/create/color-wheel/"
+        },
+        {
+          "label": "2D Game Art for Programmers",
+          "url": "http://2dgameartforprogrammers.blogspot.ca/"
+        },
+        {
+          "label": "3D Painting in Game Design",
+          "url": "https://www.youtube.com/watch?v=3iyjcA91Xkc"
+        },
+        {
+          "label": "3D gifs",
+          "url": "http://twistedsifter.com/2014/02/adding-white-bars-makes-gifs-looks-three-dimensional/"
+        },
+        {
+          "label": "Verve",
+          "url": "http://www.taron.de/forum/viewtopic.php?f=4&amp;t=4"
+        },
+        {
+          "label": "Krita",
+          "url": "http://krita.org/index.php"
+        },
+        {
+          "label": "Tilings Encyclopedia",
+          "url": "http://tilings.math.uni-bielefeld.de/"
+        },
+        {
+          "label": "Scratch Pixel",
+          "url": "http://www.scratchapixel.com/"
+        },
+        {
+          "label": "Pencil2D",
+          "url": "http://www.pencil2d.org/"
+        },
+        {
+          "label": "Cinemagraphs",
+          "url": "http://www.tripwiremagazine.com/2011/07/cinemagraphs.html"
+        },
+        {
+          "label": "They were all in love with life, drinking...",
+          "url": "http://www.jnack.com/adobe/photoshop/fountain/"
+        }
+      ]
+    },
+    "Movies": {
+      "title": "Movies",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Film Grab",
+          "url": "https://film-grab.com/"
+        },
+        {
+          "label": "Movie Screencaps",
+          "url": "http://movie-screencaps.com/"
+        },
+        {
+          "label": "Movie ScreenShots",
+          "url": "http://moviescreenshots.blogspot.ca/"
+        },
+        {
+          "label": "Le violon rouge - (1/4)",
+          "url": "http://moviescreenshots.blogspot.ca/2008/07/red-violin-1998-part-14.html"
+        },
+        {
+          "label": "Movie Scripts",
+          "url": "http://www.scifimoviepage.com/scripts/scripts.html"
+        },
+        {
+          "label": "Vantage Point",
+          "url": "http://moviescreenshots.blogspot.ca/2011/03/vantage-point-2008.html"
+        },
+        {
+          "label": "Prometheus",
+          "url": "http://moviescreenshot.blogspot.ca/2012/10/prometheus-movie-screenshots.html"
+        },
+        {
+          "label": "Cinematography of movies",
+          "url": "http://evanerichards.com/archives"
+        },
+        {
+          "label": "Album of cinematography shots",
+          "url": "http://imgur.com/a/T2GDa#0"
+        },
+        {
+          "label": "Corto Maltese movies",
+          "url": "http://www.youtube.com/user/goldenmouth50/videos?view=0"
+        }
+      ]
+    },
+    "Game": {
+      "title": "Game",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Rogue Fable II",
+          "url": "https://justin-wang123.itch.io/rogue-fable-ii"
+        },
+        {
+          "label": "Word of Horror",
+          "url": "https://panstas.itch.io/world-of-horror"
+        },
+        {
+          "label": "Kerkerkruip",
+          "url": "https://kerkerkruip.org/"
+        },
+        {
+          "label": "Tale of Ronin",
+          "url": "http://www.taleofronin.com/"
+        },
+        {
+          "label": "Detention",
+          "url": "http://www.adventuregamers.com/articles/view/32172"
+        },
+        {
+          "label": "Four Last Things",
+          "url": "http://www.joerichardson.games/fourlastthings/"
+        },
+        {
+          "label": "Donsol",
+          "url": "http://xxiivv.com/Donsol"
+        },
+        {
+          "label": "Anxiety : Lost Night",
+          "url": "https://circushorse.itch.io/anxiety-lost-night"
+        },
+        {
+          "label": "Out There Chronicles",
+          "url": "https://www.youtube.com/watch?v=RJ9JqByWJzM"
+        },
+        {
+          "label": "Prey",
+          "url": "https://www.youtube.com/watch?v=6WayqYxQeDE"
+        },
+        {
+          "label": "The Silver Case",
+          "url": "https://www.rockpapershotgun.com/2016/09/19/suda-51-interview-the-silver-case/"
+        },
+        {
+          "label": "The Boat",
+          "url": "http://www.sbs.com.au/theboat/"
+        },
+        {
+          "label": "Lifeline",
+          "url": "http://boingboing.net/2015/05/07/lifeline-astronaut-game.html"
+        },
+        {
+          "label": "Her Story",
+          "url": "http://www.rockpapershotgun.com/2015/01/23/text-lies-and-videotape-her-story-interview/"
+        },
+        {
+          "label": "Desolate (game)",
+          "url": "https://www.kickstarter.com/projects/elliotcollis/desolate/"
+        },
+        {
+          "label": "UltraCorps",
+          "url": "http://ultracorps.sjgames.com/help/help.html?topic=2"
+        },
+        {
+          "label": "Darkest Dungeon",
+          "url": "http://www.darkestdungeon.com/media/"
+        },
+        {
+          "label": "Alpha Centauri (faction editing)",
+          "url": "http://alphacentauri2.info/wiki/Faction.txt_editing_guide"
+        },
+        {
+          "label": "Alpha Centauri (alphax.txt)",
+          "url": "http://alphacentauri2.info/wiki/Alphax.txt"
+        },
+        {
+          "label": "wiki - Second Wind",
+          "url": "http://second-wind.wikia.com/wiki/Second_Wiki"
+        },
+        {
+          "label": "wiki - Alpha Protocol",
+          "url": "http://alphaprotocol.wikia.com/wiki/Alpha_Protocol_Wiki"
+        },
+        {
+          "label": "Spelunky",
+          "url": "http://www.spelunkyworld.com/"
+        },
+        {
+          "label": "First Draft of the Revolution",
+          "url": "https://lizadaly.com/first-draft/"
+        },
+        {
+          "label": "Forbidden City (genre Carcassonne)",
+          "url": "http://www.goko.com/games/ForbiddenCity"
+        },
+        {
+          "label": "Heavy Rain Demo GamePlay - Pt 3",
+          "url": "http://www.gametrailers.com/user-movie/heavy-rain-demo-gameplay/339449"
+        },
+        {
+          "label": "Neptune&#39;s Pride",
+          "url": "http://triton.ironhelmet.com/#landing"
+        },
+        {
+          "label": "Project Eternity",
+          "url": "http://www.rockpapershotgun.com/2013/08/07/project-eternity-looks-like-its-concept-art/#more-163451"
+        },
+        {
+          "label": "Anamnesis",
+          "url": "http://www.freeindiegam.es/2012/11/anamnesis-of-renascents-and-monsters-jose-ignacio-moreno-ferrer/"
+        },
+        {
+          "label": "Descent: Freespace",
+          "url": "http://fr.wikipedia.org/wiki/Descent:_FreeSpace"
+        },
+        {
+          "label": "Zenonia gameplay (Youtube)",
+          "url": "http://www.youtube.com/watch?v=aTV3FoMQRKs&amp;feature=related"
+        },
+        {
+          "label": "Coma - Free Action Game Played Online",
+          "url": "http://www.playedonline.com/game/598545/coma.html"
+        },
+        {
+          "label": "Sissy&#39;s Magical Ponycorn",
+          "url": "http://www.untoldentertainment.com/games/sissy/"
+        },
+        {
+          "label": "Command and Conquer (csharp open source)",
+          "url": "http://openra.res0l.net/"
+        },
+        {
+          "label": "The Battle for Westnoth",
+          "url": "http://www.wesnoth.org/"
+        },
+        {
+          "label": "TALE OF TALES",
+          "url": "http://tale-of-tales.com/"
+        },
+        {
+          "label": "Haunted: The Trapped Soul » Just Flash Games",
+          "url": "http://www.justflashgames.com/162/Haunted:-The-Trapped-Soul.html"
+        },
+        {
+          "label": "Bela Kovacs and The Trail of Blood",
+          "url": "http://extropiagames.com/bela-kovacs-trail-of-blood/"
+        },
+        {
+          "label": "The first hero",
+          "url": "http://www.gamerfish.com/point-and-click/the-first-hero/"
+        },
+        {
+          "label": "wiki - King of Dragon Pass",
+          "url": "http://kingofdragonpass.wikia.com/wiki/King_of_Dragon_Pass_Wiki"
+        },
+        {
+          "label": "Journey (AG review)",
+          "url": "http://www.adventuregamers.com/articles/view/24211"
+        },
+        {
+          "label": "Trauma",
+          "url": "http://www.traumagame.com/trauma.html"
+        },
+        {
+          "label": "Scarygirl by Nathan Jurevicius - The Game",
+          "url": "http://www.scarygirl.com/world.php?level=peninsula"
+        },
+        {
+          "label": "The Kingdom of Loathing",
+          "url": "http://www.kingdomofloathing.com/static.php?id=whatiskol"
+        },
+        {
+          "label": "Infra Arcana (roguelike - Lovecraft)",
+          "url": "http://infraarcana.wikispaces.com/"
+        },
+        {
+          "label": "Ages of Irving",
+          "url": "http://www.deconstructeam.com/en/hemos-sobrevivido-a-la-ludum-dare-24/"
+        },
+        {
+          "label": "Tin Man Games » The Siege of the Necromancer",
+          "url": "http://www.tinmangames.com.au/?page_id=45"
+        },
+        {
+          "label": "openNorth",
+          "url": "http://www.northworld.ca/"
+        },
+        {
+          "label": "Enter The Story: Les Miserables",
+          "url": "http://enterthestory.com/Les_Miserables.html"
+        },
+        {
+          "label": "Borderlands",
+          "url": "http://www.youtube.com/watch?v=jlgL3gZXq8I&amp;playnext=1&amp;list=PL8B858D8681494142"
+        },
+        {
+          "label": "Visuels intéressants",
+          "url": "http://www.rockpapershotgun.com/2012/06/21/novel-visuals-cinders-is-a-complex-fairy-tale/"
+        },
+        {
+          "label": "Amanita Design",
+          "url": "http://www.amanitadesign.com/"
+        },
+        {
+          "label": "A Second Face - Official Site - The Eye of Geltz is watching Us - May Sunlight be with You - For Love is stronger than Death - A Game about the Sense of Life on Earth",
+          "url": "http://www.asecondface.com/"
+        },
+        {
+          "label": "A Story About my Uncle",
+          "url": "http://astoryaboutmyuncle.com/"
+        },
+        {
+          "label": "The Dig (Youtube)",
+          "url": "http://www.youtube.com/watch?v=EGzX_7ZN8_U"
+        },
+        {
+          "label": "Bank Run - iPhone Game and Interactive Action Movie",
+          "url": "http://www.bankrungame.com/"
+        },
+        {
+          "label": "Gods will be watching",
+          "url": "http://www.indiegogo.com/projects/gods-will-be-watching"
+        },
+        {
+          "label": "Frayed Knights: The Skull of S&#39;makh-Daon",
+          "url": "http://rampantgames.com/frayedknights/"
+        },
+        {
+          "label": "The Longest Journey - Official Site",
+          "url": "http://www.longestjourney.com/"
+        },
+        {
+          "label": "Dink Smallwood",
+          "url": "http://en.wikipedia.org/wiki/Dink_Smallwood"
+        },
+        {
+          "label": "Legend of Grimrock (3d dungeon crawler)",
+          "url": "http://www.grimrock.net/"
+        },
+        {
+          "label": "The Visitor (Flash on Kongregate)",
+          "url": "http://www.kongregate.com/games/zeebarf/the-visitor"
+        },
+        {
+          "label": "Arkham Horror wiki",
+          "url": "http://www.arkhamhorrorwiki.com/Main_Page"
+        },
+        {
+          "label": "Risen",
+          "url": "http://www.youtube.com/watch?v=uvy5cxgmYZQ"
+        },
+        {
+          "label": "Memoir 44 (online)",
+          "url": "http://www.daysofwonder.com/memoir44-online/en/start/"
+        },
+        {
+          "label": "The Spirit Engine 2",
+          "url": "http://www.thespiritengine.com/tse2-screens.html"
+        },
+        {
+          "label": "DungeonRaid strategy",
+          "url": "http://forum.canardpc.com/threads/53941-iTruc-DungeonRaid-le-jeu-qui-prend-la-t%C3%AAte-des-canards-!?p=4010253"
+        },
+        {
+          "label": "The Cat Lady",
+          "url": "http://www.adventuregamers.com/games/view_articles/15574"
+        },
+        {
+          "label": "CPF: CAPTFOREVER.BAT",
+          "url": "http://www.captainforever.com/captainforever.php"
+        },
+        {
+          "label": "SteamBirds | Armor Games",
+          "url": "http://armorgames.com/play/5426/steambirds"
+        },
+        {
+          "label": "The Vermin Throne",
+          "url": "http://www.freeindiegam.es/2013/02/the-vermin-throne-damian-sommer/"
+        },
+        {
+          "label": "Dragon Age II",
+          "url": "http://www.youtube.com/watch?v=NRQzl5u5oeQ&amp;feature=related"
+        },
+        {
+          "label": "Eve timeline",
+          "url": "http://eve.com/"
+        },
+        {
+          "label": "Samsara",
+          "url": "http://emshort.wordpress.com/2012/10/31/samsara-meg-jayanth/"
+        },
+        {
+          "label": "Text-Based Multiplayer Shooter",
+          "url": "http://www.rockpapershotgun.com/2012/11/06/war-of-the-words-text-based-multiplayer-shooter/"
+        },
+        {
+          "label": "AGDInteractive Studios",
+          "url": "http://www.agdinteractive.com/games/kq1/about/about.html"
+        },
+        {
+          "label": "YouTube - Bboy Joker",
+          "url": "http://www.youtube.com/watch?v=GR3ywoc2Cp4"
+        },
+        {
+          "label": "Avant-Garde",
+          "url": "http://playavantgarde.com/"
+        },
+        {
+          "label": "Insanely Twisted Shadow Planet",
+          "url": "http://michelgagne.blogspot.com/"
+        },
+        {
+          "label": "Kentucky Route Zero",
+          "url": "http://www.adventuregamers.com/news/view/23147"
+        },
+        {
+          "label": "The Necronomicon on Kongregate",
+          "url": "http://www.kongregate.com/games/GamesofCthulhu/the-necronomicon"
+        },
+        {
+          "label": "Ace of Spades (Minecraft + Team Fortress)",
+          "url": "http://www.ace-spades.com/"
+        },
+        {
+          "label": "The Black Watchmen",
+          "url": "http://www.adventuregamers.com/articles/view/29445"
+        },
+        {
+          "label": "Top Secret (play by email)",
+          "url": "https://playtopsecret.com/"
+        },
+        {
+          "label": "The Walking Dead",
+          "url": "http://www.telltalegames.com/walkingdead"
+        },
+        {
+          "label": "Saints Row IV",
+          "url": "http://www.rockpapershotgun.com/2013/08/14/wot-i-think-saints-row-iv/"
+        },
+        {
+          "label": "The Last Night",
+          "url": "http://oddtales.net/"
+        },
+        {
+          "label": "Rule the Waves",
+          "url": "http://www.rockpapershotgun.com/2015/07/17/the-flare-path-rule-the-waves/"
+        },
+        {
+          "label": "Mudlarks",
+          "url": "http://shaun9991.itch.io/mudlarks"
+        },
+        {
+          "label": "Cave Story",
+          "url": "http://www.cavestory.org/"
+        },
+        {
+          "label": "Aviary Attorney",
+          "url": "http://aviaryattorney.com/"
+        },
+        {
+          "label": "URR on RPS",
+          "url": "http://www.rockpapershotgun.com/2013/10/18/interview-ultima-ratio-regum-a-generated-4x-roguelike/"
+        },
+        {
+          "label": "Tormentum",
+          "url": "http://ohnoo.com/tormentum.html"
+        },
+        {
+          "label": "Rimworld by Tynan Sylvester (Ottawa)",
+          "url": "http://rimworldgame.com/"
+        },
+        {
+          "label": "Star Trek",
+          "url": "http://www.codeproject.com/Articles/28228/Star-Trek-Text-Game"
+        },
+        {
+          "label": "Malleus Goblinficarium",
+          "url": "http://gamejolt.com/games/rpg/malleus-goblinficarium/54134/"
+        },
+        {
+          "label": "Tahira: Echoes of the Astral Empire",
+          "url": "http://www.tahiragame.com/"
+        },
+        {
+          "label": "Hidden Agenda",
+          "url": "Hidden Agenda"
+        },
+        {
+          "label": "Masq",
+          "url": "http://www.rockpapershotgun.com/2014/10/15/have-you-played-masq/"
+        },
+        {
+          "label": "Hearth of the Artic",
+          "url": "http://heartofthearctic.ca/"
+        },
+        {
+          "label": "Storium — The Online Storytelling Game",
+          "url": "https://www.kickstarter.com/projects/stlhood/storium-the-online-storytelling-game"
+        },
+        {
+          "label": "The Vanishing of Ethan Carter (mini-comic)",
+          "url": "http://www.theastronauts.com/comic/"
+        },
+        {
+          "label": "The RPS Verdict: Double Fine’s Broken Age, Act 1",
+          "url": "http://www.rockpapershotgun.com/2014/02/12/broken-age-part-1-review/"
+        },
+        {
+          "label": "80 Days",
+          "url": "http://www.inklestudios.com/80days/"
+        },
+        {
+          "label": "The Whisperer in Darkness",
+          "url": "http://natman.itch.io/the-whisperer-in-darkness"
+        },
+        {
+          "label": "The Frostrune",
+          "url": "http://thefrostrune.com/"
+        },
+        {
+          "label": "Save the date on RPS",
+          "url": "http://www.rockpapershotgun.com/2014/03/18/free-dating-game/"
+        },
+        {
+          "label": "Dex - Cyberpunk 2D RPG",
+          "url": "http://www.kickstarter.com/projects/dreadlocks/dex-cyberpunk-2d-rpg"
+        },
+        {
+          "label": "Hyper Light Drifter",
+          "url": "http://www.kickstarter.com/projects/1661802484/hyper-light-drifter"
+        },
+        {
+          "label": "Desktop Dungeon (HTML5 version)",
+          "url": "http://www.desktopdungeons.net/HTML5/"
+        },
+        {
+          "label": "Lone Survivor",
+          "url": "http://www.lonesurvivor.co.uk/media.html"
+        },
+        {
+          "label": "Winterstrike Review (Tilt at Windmills)",
+          "url": "http://lacunagame.blogspot.ca/2013/04/what-im-playing-winterstrike-and-some.html"
+        },
+        {
+          "label": "Hobo Lobo of Hamelin",
+          "url": "http://hobolobo.net/"
+        },
+        {
+          "label": "Deep Sleep",
+          "url": "http://www.kongregate.com/games/scriptwelder/deep-sleep"
+        },
+        {
+          "label": "Fallen London",
+          "url": "http://www.fallenlondon.com/"
+        },
+        {
+          "label": "Play Town of Fears, a free online game...",
+          "url": "http://www.kongregate.com/games/aveeMuhaGames/town-of-fears-test"
+        }
+      ]
+    },
+    "Current_Interest": {
+      "title": "Current_Interest",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Single Developer who sold 500,000 games on Steam",
+          "url": "https://www.rockpapershotgun.com/2017/10/18/secrets-of-the-developer-who-sold-half-a-million-videogames-youve-never-heard-of-on-steam/"
+        },
+        {
+          "label": "Cubus Games",
+          "url": "http://www.cubusgames.com/"
+        },
+        {
+          "label": "Places",
+          "url": "http://jlv.fi/places/"
+        },
+        {
+          "label": "Podcast Central (History podcasts)",
+          "url": "https://www.youtube.com/channel/UCUBuu5p04G2hXz6Zjyjij_A"
+        },
+        {
+          "label": "Valerian Movie",
+          "url": "http://valerianmovie.com/"
+        },
+        {
+          "label": "What Works And Why: Multiple Routes In Deus Ex",
+          "url": "http://www.pentadact.com/2015-11-08-what-works-and-why-multiple-routes-in-deus-ex/"
+        },
+        {
+          "label": "SimCity Social &amp; 8 Truths of Facebook Game Design",
+          "url": "http://www.raymazza.com/game-design/simcity-social-8-truths-of-facebook-game-design"
+        },
+        {
+          "label": "Thé Lion&#39;s Song Devblog",
+          "url": "http://thelionssong.tumblr.com/"
+        },
+        {
+          "label": "Control500",
+          "url": "http://ctrl500.com/"
+        },
+        {
+          "label": "Star Control II",
+          "url": "http://lparchive.org/Star-Control-2/Intro/"
+        },
+        {
+          "label": "Visions of the Future (nasa)",
+          "url": "http://www.jpl.nasa.gov/visions-of-the-future/"
+        },
+        {
+          "label": "Where the Water Tastes Like Wine",
+          "url": "http://wherethewatertasteslikewine.com/"
+        },
+        {
+          "label": "Art Station",
+          "url": "https://www.artstation.com/artwork/no-way-out-ui-design"
+        },
+        {
+          "label": "Infocom Cabinet",
+          "url": "https://archive.org/details/infocomcabinet"
+        },
+        {
+          "label": "Michael La Chance présente Dans le ventre du monstre",
+          "url": "http://www.radio-canada.ca/audio-video/pop.shtml#urlMedia=http://www.radio-canada.ca/Medianet/2013/CBF/LesAnneeslumiere201306091212_4.asx"
+        },
+        {
+          "label": "StoryNexus: Reference Guide",
+          "url": "https://docs.google.com/document/d/1K1wnNJoBhxr17fe3kHQTnpvWLdyxeKWZBKivDQHsdJg/edit#heading=h.b45dv7n62c2r"
+        },
+        {
+          "label": "OttawaJS",
+          "url": "http://ottawajs.org/"
+        },
+        {
+          "label": "Snopes (rumeurs, conspirations)",
+          "url": "http://m.snopes.com/category/snopes/"
+        },
+        {
+          "label": "Thomas Scholes",
+          "url": "http://www.artofscholes.com/process-video-tutorials/"
+        },
+        {
+          "label": "Game Faqs",
+          "url": "http://www.gamefaqs.com/"
+        },
+        {
+          "label": "Game Guides &amp; Walkthroughs",
+          "url": "http://guides.gamepressure.com/"
+        },
+        {
+          "label": "Living with the Sims&#39; AI",
+          "url": "http://aigamedev.com/open/review/the-sims-ai/"
+        },
+        {
+          "label": "A Delicious Guide to Fallen London",
+          "url": "http://www.cs.helsinki.fi/u/vajo/fallenlondon/Chapters.html"
+        },
+        {
+          "label": "Destiny Companion App",
+          "url": "https://www.google.com/search?q=Destiny+companion+app&amp;safe=off&amp;es_sm=122&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=POFgVYuqBa6HsQSR9oGIAg&amp;ved=0CAoQ_AUoBA&amp;biw=1538&amp;bih=1115#imgrc=gCF2Z7Pg9nWy0M%253A%3B0HJ0rZDPOzEOIM%3Bhttp%253A%252F%252Fs.pro-gmedia.com%252Fvideogamer%252Fmedia%252Fimages%252Fpub%252Flarge%252Fdestiny_app_screen_gallery.jpg%3Bhttp%253A%252F%252Fwww.videogamer.com%252Fps4%252Fdestiny%252Fnews%252Fheres_what_the_destiny_mobile_app_looks_like.html%3B1920%3B853"
+        },
+        {
+          "label": "Life and style Experience",
+          "url": "http://www.theguardian.com/lifeandstyle/series/experience"
+        },
+        {
+          "label": "Procedural Content Generation in Games",
+          "url": "http://pcgbook.com/"
+        },
+        {
+          "label": "Restricted Data",
+          "url": "http://blog.nuclearsecrecy.com/"
+        },
+        {
+          "label": "Cracked",
+          "url": "http://www.cracked.com/"
+        },
+        {
+          "label": "GameUI",
+          "url": "http://gameui.tumblr.com/"
+        },
+        {
+          "label": "raimMeter (images)",
+          "url": "https://www.google.ca/search?q=rainmeter&amp;safe=off&amp;espv=2&amp;biw=1858&amp;bih=1115&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=bVaUVPuAO42GyATgmoGgAw&amp;sqi=2&amp;ved=0CAYQ_AUoAQ#imgdii=_"
+        },
+        {
+          "label": "Primary Objects",
+          "url": "http://www.primaryobjects.com/articles"
+        },
+        {
+          "label": "Raiders (b/w no sound)",
+          "url": "http://extension765.com/sdr/18-raiders"
+        },
+        {
+          "label": "Best photos of world cup 2014 - see comments",
+          "url": "http://www.theguardian.com/football/gallery/2014/jul/14/world-cup-2014-best-photographs-brazil"
+        },
+        {
+          "label": "StoryNexus - Creator&#39;s pack",
+          "url": "https://docs.google.com/document/d/1Adlf-0dFgflalJyUF8ribw2bvgcID3-byj6P4j6cFTM/edit"
+        }
+      ]
+    },
+    "Video_of_Game": {
+      "title": "Video_of_Game",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Under Leaves",
+          "url": "https://www.youtube.com/watch?v=WrFLIvvD9Mo"
+        },
+        {
+          "label": "Lost Horizon",
+          "url": "https://www.youtube.com/watch?v=OTvSBUiwP3Y"
+        },
+        {
+          "label": "Tormentum",
+          "url": "https://www.youtube.com/watch?v=kKrUEUN94cY"
+        },
+        {
+          "label": "Hidden Folks",
+          "url": "https://www.youtube.com/watch?v=EBBdkGioiMU"
+        },
+        {
+          "label": "Blackhole",
+          "url": "https://www.youtube.com/watch?v=NoCaJzQa3m4"
+        },
+        {
+          "label": "Hardware Official Teaser",
+          "url": "http://www.youtube.com/watch?v=hgylViCFHAs"
+        },
+        {
+          "label": "Penumbra game (adventure survival horror)",
+          "url": "http://www.penumbragame.com/media.php"
+        },
+        {
+          "label": "Slapshot",
+          "url": "http://www.youtube.com/watch?v=WBQuVPZk1mw"
+        },
+        {
+          "label": "Dragon Age 3 Reveal Trailer",
+          "url": "http://www.youtube.com/watch?v=4XVSFAlVZhY"
+        },
+        {
+          "label": "Guild Wars - Charr Land Cinematic Trailer",
+          "url": "http://www.youtube.com/watch?v=yFJIBho3B6M"
+        },
+        {
+          "label": "The walking deads",
+          "url": "http://www.youtube.com/watch?v=yLhy1Vfz9uc"
+        },
+        {
+          "label": "Reperfection",
+          "url": "http://www.adventuregamers.com/videos/view/22580"
+        },
+        {
+          "label": "Okami",
+          "url": "http://www.youtube.com/watch?v=HG3FtX9cqo8"
+        },
+        {
+          "label": "Fatal Frame II (Youtube)",
+          "url": "http://www.youtube.com/user/Toegoff#p/c/5002074D07786A4D/0/uQzZNKe_JXs"
+        },
+        {
+          "label": "Don&#39;t Starve!",
+          "url": "http://www.youtube.com/watch?v=Iq-jPKplyuQ"
+        },
+        {
+          "label": "YouTube - ADVRipper4EVER&#39;s Channel",
+          "url": "http://www.youtube.com/user/ADVRipper4EVER"
+        },
+        {
+          "label": "Dark Seed II (abandonia)",
+          "url": "http://www.abandonia.com/en/games/889/Dark+Seed+II.html"
+        },
+        {
+          "label": "The Organ Trail",
+          "url": "http://www.youtube.com/watch?v=iTlXwLBF_Rg"
+        },
+        {
+          "label": "_Perry Rhodan adventures (see 123Pazu playlists)",
+          "url": "https://www.youtube.com/watch?v=PDCyZtXoi00&amp;list=PL521A8DD5B8CC6781"
+        },
+        {
+          "label": "Quest for Glory (adventure + rpg)",
+          "url": "http://www.youtube.com/watch?NR=1&amp;feature=endscreen&amp;v=EfGFncyGrtA"
+        },
+        {
+          "label": "Backwater Gospel",
+          "url": "http://www.youtube.com/watch?v=JnnbTaMXDqQ"
+        },
+        {
+          "label": "Anachronox",
+          "url": "http://www.youtube.com/watch?v=cCGKcoV4Pkk"
+        },
+        {
+          "label": "Zeno Clash",
+          "url": "http://www.youtube.com/watch?v=z2KuQAIlN0w"
+        },
+        {
+          "label": "The Cat Lady",
+          "url": "http://www.youtube.com/watch?v=1kobu8NZsYI&amp;feature=youtu.be"
+        },
+        {
+          "label": "The Bard&#39;s Tale (Youtube)",
+          "url": "http://www.youtube.com/watch?v=k_0koZ6WfnY"
+        },
+        {
+          "label": "Lord of the Runes",
+          "url": "https://www.youtube.com/watch?v=4hZlUjMR_tg"
+        },
+        {
+          "label": "Ib: (Free PC Horror Game)",
+          "url": "http://www.youtube.com/watch?v=tsVKm1f0R60#!"
+        },
+        {
+          "label": "Guild Wars - Cinematic Conversation",
+          "url": "http://www.youtube.com/watch?v=u54RqFLEzlk"
+        },
+        {
+          "label": "Forbidden Siren 2 (Youtube)",
+          "url": "http://www.youtube.com/watch?v=F5rw2ieiHZw&amp;feature=related"
+        },
+        {
+          "label": "Top 10 scariest free games",
+          "url": "http://www.youtube.com/watch?v=Ypx1oAgQ2Og&amp;feature=related"
+        },
+        {
+          "label": "Guild Wars - Creating a Cinematic",
+          "url": "http://www.youtube.com/watch?v=kgfnrdeeuMI"
+        },
+        {
+          "label": "Deep Sleep",
+          "url": "http://www.youtube.com/watch?v=NzCqVg1Sh74"
+        },
+        {
+          "label": "Sanitarium (Youtube)",
+          "url": "http://www.youtube.com/watch?v=6-j4hDsgg5A&amp;feature=related"
+        },
+        {
+          "label": "Dishonored Developer Documentaries",
+          "url": "http://www.youtube.com/watch?v=zs4nCzAUQV4"
+        },
+        {
+          "label": "Cinders",
+          "url": "http://www.youtube.com/watch?v=AaoSeIDPVq0"
+        },
+        {
+          "label": "Dark Meadow",
+          "url": "http://www.youtube.com/watch?v=ru78puYiBZ4"
+        },
+        {
+          "label": "Dark Recall (text based adventure with point and click)",
+          "url": "http://www.youtube.com/watch?v=oaIeSq_WFXI"
+        },
+        {
+          "label": "Destiny Companion App Walkthrough",
+          "url": "https://www.youtube.com/watch?v=QJsIY7RrVuY"
+        },
+        {
+          "label": "Valiant Hearts: The Great War",
+          "url": "https://www.youtube.com/watch?v=C_NCU-1Dxd4"
+        },
+        {
+          "label": "Three Fourths Home",
+          "url": "https://www.youtube.com/watch?v=Y-8VF0u_jrU"
+        },
+        {
+          "label": "Sunless Sea",
+          "url": "https://www.youtube.com/watch?v=sF2PjbZ8r6U"
+        },
+        {
+          "label": "Let&#39;s Play Fate of the World",
+          "url": "https://www.youtube.com/watch?v=0elSX-5fbRA"
+        },
+        {
+          "label": "Valiant Hearts: The Great War",
+          "url": "https://www.youtube.com/watch?v=sDzhV712qRQ"
+        },
+        {
+          "label": "Prom Week Trailer",
+          "url": "http://www.youtube.com/watch?v=zc5QEcWGh1U"
+        },
+        {
+          "label": "Broken Age Act 1 Launch Trailer",
+          "url": "https://www.youtube.com/watch?v=L2ShKSQZQdE#t=28"
+        },
+        {
+          "label": "Mass Effect 2 Intro",
+          "url": "http://www.youtube.com/watch?v=Ga3_CNaBpiE"
+        },
+        {
+          "label": "Shadowrun Returns",
+          "url": "http://www.youtube.com/watch?v=p-b-ggUSvo4"
+        },
+        {
+          "label": "Interference - alpha demo",
+          "url": "http://www.youtube.com/watch?v=mOyY9ny6zp8"
+        },
+        {
+          "label": "Emerald City Confidential Part 1 Intro - YouTube",
+          "url": "http://www.youtube.com/watch?v=LFO5MO1dlvw"
+        },
+        {
+          "label": "A New Beginning - PC Gameplay (english) - YouTube",
+          "url": "http://www.youtube.com/watch?v=RnkIqeiYKfM"
+        },
+        {
+          "label": "Cursed Mountain",
+          "url": "http://www.youtube.com/watch?v=Q7Gbgk4dGGk"
+        },
+        {
+          "label": "Silent Hill Intro - YouTube",
+          "url": "http://www.youtube.com/watch?v=m5j49JgXcdY"
+        },
+        {
+          "label": "Diablo III: Opening Cinematic - YouTube",
+          "url": "http://www.youtube.com/watch?v=prJlQ5XKlTE"
+        },
+        {
+          "label": "Skyrim - Behind the Wall: The Making of Skyrim [HD 1080P] - YouTube",
+          "url": "http://www.youtube.com/watch?v=tOEVOor7R3I"
+        },
+        {
+          "label": "Trine 2",
+          "url": "http://www.youtube.com/watch?v=btXW2vIQn2U"
+        }
+      ]
+    },
+    "NLP": {
+      "title": "NLP",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Building a Conversational Bot with JavaScript and Node.js",
+          "url": "http://developer.telerik.com/content-types/tutorials/building-conversational-bot-javascript/"
+        },
+        {
+          "label": "Chat Mapper",
+          "url": "http://www.chat-mapper.com/"
+        },
+        {
+          "label": "Babel Project",
+          "url": "http://babelproject.com/"
+        },
+        {
+          "label": "SO: Generative grammar for natural language",
+          "url": "http://stackoverflow.com/questions/6583160/are-there-published-generative-grammars-for-natural-languages"
+        },
+        {
+          "label": "ChatScript",
+          "url": "http://chatscript.sourceforge.net/"
+        },
+        {
+          "label": "DSL using Irony",
+          "url": "http://www.codeproject.com/Articles/26975/Writing-Your-First-Domain-Specific-Language-Part-1"
+        },
+        {
+          "label": "Chatbot Tutorial",
+          "url": "http://www.codeproject.com/Articles/36106/Chatbot-Tutorial"
+        },
+        {
+          "label": "How to Get Started with AYLIEN Text Analysis API",
+          "url": "http://blog.aylien.com/post/98898666283/how-to-get-started-with-aylien-text-analysis-api"
+        },
+        {
+          "label": "Maluuba",
+          "url": "http://dev.maluuba.com/"
+        },
+        {
+          "label": "a Tiny Parser Generator v1.2 - CodeProject®",
+          "url": "http://www.codeproject.com/Articles/28294/a-Tiny-Parser-Generator-v1-2"
+        },
+        {
+          "label": "Abodit Natural Language Engine for .NET",
+          "url": "http://nlp.abodit.com/"
+        },
+        {
+          "label": "SO: c++ - Very basic English grammar parser...",
+          "url": "http://stackoverflow.com/questions/1033649/very-basic-english-grammar-parser"
+        },
+        {
+          "label": "SO: parsing - Your favorite natural language...",
+          "url": "http://stackoverflow.com/questions/88984/your-favorite-natural-language-parser"
+        },
+        {
+          "label": "SO: nlp - Better source for query disambiguat...",
+          "url": "http://stackoverflow.com/questions/5986931/better-source-for-query-disambiguation-other-than-wordnet"
+        },
+        {
+          "label": "Simple NLP Part-of-Speech tagger in Python...",
+          "url": "http://jasonwiener.com/2006/01/20/simple-nlp-part-of-speech-tagger-in-python/"
+        },
+        {
+          "label": "PHP port of GPoSTTL (Brill POS tagger)",
+          "url": "https://github.com/chaosprophet/Ninja-PoST"
+        },
+        {
+          "label": "Javascript Part of Speech (jspos) Tagger",
+          "url": "http://code.google.com/p/jspos/"
+        },
+        {
+          "label": "Windows interface for Stuttgart Tree Tagger",
+          "url": "http://www.smo.uhi.ac.uk/~oduibhin/oideasra/interfaces/winttinterface.htm"
+        },
+        {
+          "label": "Étiquetage grammatical - Wikipédia",
+          "url": "http://fr.wikipedia.org/wiki/%C3%89tiquetage_grammatical"
+        },
+        {
+          "label": "Statistical parsing of English sentences...",
+          "url": "http://www.codeproject.com/Articles/12109/Statistical-parsing-of-English-sentences"
+        }
+      ]
+    },
+    "References": {
+      "title": "References",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Lens NY Times",
+          "url": "http://lens.blogs.nytimes.com/"
+        },
+        {
+          "label": "Magnum Photos",
+          "url": "https://www.magnumphotos.com/"
+        },
+        {
+          "label": "Masters of Anatomy",
+          "url": "http://mastersofanatomy.com/"
+        },
+        {
+          "label": "Society of Visual Storytelling",
+          "url": "https://svslearn.com/classes"
+        },
+        {
+          "label": "Photos | Wired",
+          "url": "https://www.wired.com/category/photo"
+        },
+        {
+          "label": "500px",
+          "url": "https://500px.com/popular"
+        },
+        {
+          "label": "Anatomy",
+          "url": "https://www.pinterest.com/aaveshkhan/anatomy/"
+        },
+        {
+          "label": "Figure &amp; Gesture Drawing",
+          "url": "http://artists.pixelovely.com/"
+        },
+        {
+          "label": "The 2016 Audubon Photography Awards: Top 100",
+          "url": "https://www.audubon.org/magazine/may-june-2016/the-2016-audubon-photography-awards-top-100"
+        },
+        {
+          "label": "Photobash",
+          "url": "http://www.photobash.org/"
+        },
+        {
+          "label": "DesignDoll",
+          "url": "http://terawell.net/terawell/"
+        },
+        {
+          "label": "Making Of &#39;Discovering a Muse&#39; - 3dtotal",
+          "url": "http://www.3dtotal.com/index_tutorial_detailed.php?id=1463#.ULuFVoPAd8E"
+        },
+        {
+          "label": "!!The Telegraph - Pictures of the day",
+          "url": "http://www.telegraph.co.uk/news/picturegalleries/picturesoftheday/"
+        },
+        {
+          "label": "!CG Textures - Images References",
+          "url": "http://www.cgtextures.com/"
+        },
+        {
+          "label": "Anatomy Arcade",
+          "url": "http://www.anatomyarcade.com/"
+        },
+        {
+          "label": "Resources, References, and Tutorials",
+          "url": "http://art-resources.tumblr.com/"
+        },
+        {
+          "label": "stock - senshistock",
+          "url": "http://senshistock.deviantart.com/gallery/"
+        },
+        {
+          "label": "The World of Steam (kickstarter)",
+          "url": "http://www.kickstarter.com/projects/2045844095/the-world-of-steam"
+        },
+        {
+          "label": "Sycra - Resources",
+          "url": "http://sycra.net/"
+        },
+        {
+          "label": "Textures",
+          "url": "http://www.plaintextures.com/index.php"
+        },
+        {
+          "label": "Skin: A Tutorial",
+          "url": "http://navate.deviantart.com/art/SKIN-a-tutorial-Part-2-145159387"
+        },
+        {
+          "label": "Rob Whitworth Photography",
+          "url": "http://www.robwhitworth.co.uk/"
+        },
+        {
+          "label": "Wikisource - la bibliothèque libre",
+          "url": "http://fr.wikisource.org/wiki/Wikisource:Accueil"
+        },
+        {
+          "label": "Expressions Reference Project",
+          "url": "http://chronicdoodler.deviantart.com/favourites/41008996"
+        },
+        {
+          "label": "Steampunk (google images)",
+          "url": "https://www.google.ca/search?q=steampunk+games+iphone&amp;hl=en&amp;tbo=u&amp;tbm=isch&amp;source=univ&amp;sa=X&amp;ei=3uzZUP3OHKea0QHgjYDgBg&amp;ved=0CEsQsAQ&amp;biw=1600&amp;bih=1075#hl=en&amp;tbo=d&amp;tbm=isch&amp;sa=1&amp;q=steampunk+games&amp;oq=steampunk+games&amp;gs_l=img.12...0.0.2.25152933.0.0.0.0.0.0.0.0..0.0...0.0...1c.oHWbSY6TmRs&amp;bav=on.2,or.r_gc.r_pw.r_qf.&amp;bvm=bv.1355534169,d.dmQ&amp;fp=6f0109df9e45e659&amp;bpcl=40096503&amp;biw=1600&amp;bih=1075"
+        },
+        {
+          "label": "Steampunk City Steam",
+          "url": "http://pinterest.com/steampunkcity/"
+        },
+        {
+          "label": "!!Wall Stree Journal - Photos of the day",
+          "url": "http://blogs.wsj.com/photojournal/"
+        },
+        {
+          "label": "!Powerful Pictures",
+          "url": "http://www.buzzfeed.com/expresident/most-powerful-photographs-ever-taken"
+        },
+        {
+          "label": "Wonder Woman Digital Painting",
+          "url": "http://www.robertocampus.com/2007/06/photoshop-tutorial-wonder-woman-pin-up-digital-painting/"
+        },
+        {
+          "label": "!!National Post - Photos of the day",
+          "url": "http://news.nationalpost.com/tag/photos-of-the-day/"
+        },
+        {
+          "label": "Littérature audio",
+          "url": "http://www.litteratureaudio.com/"
+        },
+        {
+          "label": "Digital Design Resources",
+          "url": "http://www.obsidiandawn.com/"
+        },
+        {
+          "label": "!!National Geographic - Picture of the day",
+          "url": "http://photography.nationalgeographic.com/photography/photo-of-the-day"
+        },
+        {
+          "label": "Steampunk Emporium",
+          "url": "http://www.steampunkemporium.com/steam.php"
+        },
+        {
+          "label": "Golden Crop",
+          "url": "http://goldencrop.sourceforge.net/faq.html"
+        },
+        {
+          "label": "Time Collapse",
+          "url": "http://www.dpmag.com/how-to/shooting/time-collapse.html"
+        },
+        {
+          "label": "Fuck Yeah SteamPunk Fashion",
+          "url": "http://fysteamfashion.tumblr.com/"
+        },
+        {
+          "label": "Art Study Online",
+          "url": "http://artstudyonline.com/rc01/"
+        },
+        {
+          "label": "Keith Whitelock",
+          "url": "https://www.youtube.com/user/jniths/videos"
+        },
+        {
+          "label": "New Masters Academy",
+          "url": "https://www.youtube.com/user/NewMastersAcademy/playlists"
+        },
+        {
+          "label": "onairvideo",
+          "url": "https://www.youtube.com/user/onairvideo/playlists"
+        },
+        {
+          "label": "Tech Brushes",
+          "url": "http://z-design.deviantart.com/art/Z-design-Tech-brushes-set-v2-20701749"
+        },
+        {
+          "label": "Gamut Mask",
+          "url": "http://www.livepaintinglessons.com/gamutmask.php"
+        },
+        {
+          "label": "WikiMedia",
+          "url": "https://commons.wikimedia.org/wiki/Main_Page"
+        },
+        {
+          "label": "ArtRage",
+          "url": "http://artrage.deviantart.com/"
+        },
+        {
+          "label": "Unsplash",
+          "url": "https://unsplash.com/"
+        },
+        {
+          "label": "Shorpy",
+          "url": "http://www.shorpy.com/"
+        },
+        {
+          "label": "Subtle Patterns",
+          "url": "http://subtlepatterns.com/thumbnail-view/"
+        },
+        {
+          "label": "Resources - Level Up!",
+          "url": "http://www.fusroda.com/resources"
+        },
+        {
+          "label": "Temple of the Seven Golden Camels Everything I know about the art of storyboarding.",
+          "url": "http://sevencamels.blogspot.ca/"
+        },
+        {
+          "label": "HMS Barham Explodes and Sinks (1941)",
+          "url": "https://www.youtube.com/watch?v=YdrISbwy_zI"
+        },
+        {
+          "label": "Diary of William Lyon Mackenzie King (ref. to Hitler)",
+          "url": "http://www.bac-lac.gc.ca/eng/discover/politics-government/prime-ministers/william-lyon-mackenzie-king/Pages/item.aspx?IdNumber=20224&amp;"
+        },
+        {
+          "label": "Bees &amp; Bombs",
+          "url": "http://beesandbombs.tumblr.com/"
+        },
+        {
+          "label": "humanae (pantone skin color)",
+          "url": "http://humanae.tumblr.com/"
+        },
+        {
+          "label": "&#39;Skyfall&#39; palette",
+          "url": "http://i.imgur.com/75qLehZ.jpg"
+        },
+        {
+          "label": "muybridge (animation photographs)",
+          "url": "https://www.google.ca/search?q=muybridge&amp;safe=off&amp;espv=2&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=8BPxU9_aIIz-yQSKyIHgDA&amp;ved=0CAYQ_AUoAQ&amp;biw=1538&amp;bih=1115"
+        },
+        {
+          "label": "skin tone color palette photoshop",
+          "url": "https://www.google.ca/search?q=photoshop+color+palette+tutorial&amp;safe=off&amp;espv=2&amp;tbm=isch&amp;tbo=u&amp;source=univ&amp;sa=X&amp;ei=A6abU-n4IYyjyASbsoCgAQ&amp;ved=0CEgQsAQ&amp;biw=1538&amp;bih=1115#q=skin+tone+color+palette+photoshop&amp;safe=off&amp;tbm=isch&amp;imgdii=_"
+        },
+        {
+          "label": "Using references",
+          "url": "http://shattered-earth.deviantart.com/art/The-BASICS-Using-References-255875213"
+        },
+        {
+          "label": "How to Choose Colours that Work!",
+          "url": "https://www.youtube.com/watch?v=9kQllLy_X4I&amp;list=PLV2X3tgajVlFROS5fuIVKLGs78_fC4JTN"
+        },
+        {
+          "label": "Making of &#39;Hayley&#39;",
+          "url": "http://www.3dtotal.com/index_tutorial_detailed.php?id=1542#.UqpkmvSsiG5"
+        },
+        {
+          "label": "Before They Pass Away",
+          "url": "http://beforethey.com/"
+        },
+        {
+          "label": "SketchBook",
+          "url": "http://one1more2time3.wordpress.com/2013/11/27/sketchbook/"
+        },
+        {
+          "label": "steampunk insects",
+          "url": "http://www.thisiscolossal.com/2013/11/insect-assemblages-edouard-martinet/"
+        },
+        {
+          "label": "LoremPixel",
+          "url": "http://lorempixel.com/"
+        },
+        {
+          "label": "Art and reference point",
+          "url": "http://anatomicalart.tumblr.com/"
+        },
+        {
+          "label": "Posemaniacs",
+          "url": "http://www.posemaniacs.com/"
+        },
+        {
+          "label": "ww2 audio clips",
+          "url": "http://www.bbc.co.uk/schoolradio/subjects/history/ww2clips/sounds/air_raid_montage"
+        },
+        {
+          "label": "Colorized Historical Photos",
+          "url": "http://m.imgur.com/a/YiOLx"
+        },
+        {
+          "label": "Loomis - Reference drawing books",
+          "url": "http://alexhays.com/loomis/"
+        }
+      ]
+    },
+    "Vendredi": {
+      "title": "Vendredi",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Turboencabulator",
+          "url": "https://en.wikipedia.org/wiki/Turboencabulator"
+        },
+        {
+          "label": "Swedish Sign Language Interpreter Steals The Show!",
+          "url": "https://www.youtube.com/watch?v=B-sJXxIPakk"
+        },
+        {
+          "label": "Chores are hard",
+          "url": "https://i.imgur.com/beZt9qN.gifv"
+        },
+        {
+          "label": "Verbatim: What Is a Photocopier?",
+          "url": "https://www.youtube.com/watch?v=PZbqAMEwtOE"
+        },
+        {
+          "label": "Captain Sum Ting Wong",
+          "url": "https://www.youtube.com/watch?v=AmclgO6w0C0"
+        },
+        {
+          "label": "This is colossal",
+          "url": "http://www.thisiscolossal.com/"
+        },
+        {
+          "label": "Zeitgeist (Phil)",
+          "url": "http://www.zeitgeistmovie.com/"
+        },
+        {
+          "label": "Flashed Face Distortion",
+          "url": "http://www.youtube.com/watch?v=wM6lGNhPujE"
+        },
+        {
+          "label": "Tom Thum at TEDx Sydney",
+          "url": "http://www.youtube.com/watch?v=GNZBSZD16cY"
+        },
+        {
+          "label": "Papercraft (birds)",
+          "url": "http://www.johanscherft.com/papercraft.html"
+        },
+        {
+          "label": "Douglas Adams",
+          "url": "https://www.youtube.com/channel/UCzFcnA1Y6EMmWTtIDx92Xng/videos"
+        },
+        {
+          "label": "Arkadia (infinite zoom canvas+js)",
+          "url": "http://arkadia.xyz/"
+        },
+        {
+          "label": "CodeCombat",
+          "url": "http://codecombat.com/"
+        },
+        {
+          "label": "sauveur de chat",
+          "url": "http://i.imgur.com/WQPq2uY.gifv"
+        },
+        {
+          "label": "Shaolin Soccer",
+          "url": "https://www.youtube.com/watch?v=sSavjg-Ss_A"
+        },
+        {
+          "label": "CT at max speed",
+          "url": "https://www.youtube.com/watch?v=2CWpZKuy-NE"
+        },
+        {
+          "label": "Hobo Nickels Carved from Clad Coins",
+          "url": "http://www.thisiscolossal.com/2013/12/hobo-nickels-paolo-curcio/"
+        },
+        {
+          "label": "Texture Breathing",
+          "url": "https://vimeo.com/67886447"
+        },
+        {
+          "label": "Truck driving skill",
+          "url": "https://www.youtube.com/watch?v=nLTDef0oeuA"
+        },
+        {
+          "label": "Zach King",
+          "url": "https://vine.co/Zach.King"
+        },
+        {
+          "label": "The Blue Ball",
+          "url": "http://blueballfixed.ytmnd.com/"
+        },
+        {
+          "label": "Droste Effect",
+          "url": "https://www.youtube.com/watch?v=9WHdyG9mJaI"
+        },
+        {
+          "label": "Endhiran (Robot)",
+          "url": "https://www.youtube.com/watch?v=yysbbPStfWw"
+        },
+        {
+          "label": "3D astronomy",
+          "url": "http://astroanarchy.zenfolio.com/p26802586"
+        },
+        {
+          "label": "How To Make a Matchbox Rocket Launching Kit",
+          "url": "https://www.youtube.com/watch?v=WFyKgmnCF-8"
+        },
+        {
+          "label": "The Hardest Mandelbrot Zoom Ever In 2014,10^198",
+          "url": "https://www.youtube.com/watch?v=zXTpASSd9xE"
+        },
+        {
+          "label": "Zach King&#39;s Best Vines from 2014",
+          "url": "https://www.youtube.com/watch?v=E2lNz1LqYyQ"
+        },
+        {
+          "label": "Inspirograph",
+          "url": "http://nathanfriend.io/inspirograph/"
+        },
+        {
+          "label": "DIY Bokeh Lens - Man Vs. Pin #41",
+          "url": "https://www.youtube.com/watch?v=hkZqIazkuTc"
+        },
+        {
+          "label": "Boredom Therapy",
+          "url": "http://boredomtherapy.com/"
+        },
+        {
+          "label": "Aug(de)mented Reality 2",
+          "url": "https://www.youtube.com/watch?v=9V-kc5Hc1iE"
+        },
+        {
+          "label": "Veritas",
+          "url": "https://www.youtube.com/user/1veritasium/videos"
+        },
+        {
+          "label": "Shanghai Tower",
+          "url": "https://www.youtube.com/watch?v=gLDYtH1RH-U"
+        },
+        {
+          "label": "Numberphile",
+          "url": "http://www.numberphile.com/"
+        },
+        {
+          "label": "3D paper portrait",
+          "url": "http://www.bertsimons.nl/portfolio/papersculptures/rozemarijn"
+        },
+        {
+          "label": "moto vs camion",
+          "url": "https://www.youtube.com/watch?v=7vd_OuqUAaI"
+        },
+        {
+          "label": "The best of Archer",
+          "url": "http://www.youtube.com/watch?v=9x6KApzgtjU"
+        },
+        {
+          "label": "GregMutt - avatar review",
+          "url": "https://www.youtube.com/user/GregMutt/videos"
+        },
+        {
+          "label": "Beautiful Decay",
+          "url": "http://beautifuldecay.com/"
+        },
+        {
+          "label": "Dance routine",
+          "url": "http://thekidshouldseethis.com/post/11436304645"
+        },
+        {
+          "label": "Ridiculous goal",
+          "url": "http://www.reddit.com/r/sports/comments/22qfyz/ridiculous_goal_scored_by_geoff_platt_of/"
+        },
+        {
+          "label": "Timeline of the far future",
+          "url": "http://www.bbc.com/future/story/20140105-timeline-of-the-far-future"
+        },
+        {
+          "label": "Video Room 1000",
+          "url": "http://www.youtube.com/watch?v=icruGcSsPp0"
+        },
+        {
+          "label": "Limitless: Graffiti",
+          "url": "http://www.thisiscolossal.com/2013/11/limitless-new-graffiti-timelapse-from-sofles-fintan-magee-treas-and-quench/"
+        },
+        {
+          "label": "Snowflakes, night city and other things",
+          "url": "http://chaoticmind75.blogspot.ru/"
+        },
+        {
+          "label": "Ulric Collette (see facade &amp; genetic portraits)",
+          "url": "http://www.ulriccollette.com/"
+        },
+        {
+          "label": "Just the two of us",
+          "url": "http://www.kpic.at/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=56&amp;Itemid=113"
+        },
+        {
+          "label": "Pumpkin carving",
+          "url": "http://villafanestudios.com/"
+        },
+        {
+          "label": "M-Blocks Modular Robots",
+          "url": "http://www.youtube.com/watch?v=mOqjFa4RskA"
+        },
+        {
+          "label": "Doublefaced",
+          "url": "http://www.thisiscolossal.com/2013/09/doublefaced/"
+        },
+        {
+          "label": "Flying eagle point of view",
+          "url": "http://www.youtube.com/watch?v=G3QrhdfLCO8"
+        },
+        {
+          "label": "Cartoon portrait for $5",
+          "url": "http://fiverr.com/hironan/draw-you-headshotavatarportrait"
+        },
+        {
+          "label": "Map of Redditland",
+          "url": "http://3.bp.blogspot.com/-aeIIwwAwSdU/UjNcE0qSHUI/AAAAAAAADU4/BrljuUnAIag/s1600/redditland+map.png"
+        },
+        {
+          "label": "How to moonwalk",
+          "url": "http://m.imgur.com/a/g2XVS"
+        },
+        {
+          "label": "CrazyRussianHacker",
+          "url": "http://www.youtube.com/user/CrazyRussianHacker/videos"
+        }
+      ]
+    },
+    "Game_Design": {
+      "title": "Game_Design",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Small-Scale Structures in CYOA",
+          "url": "https://emshort.wordpress.com/2016/11/05/small-scale-structures-in-cyoa/"
+        },
+        {
+          "label": "How Little Choices Make Sorcery! Feel Epic",
+          "url": "https://www.rockpapershotgun.com/2016/10/21/how-little-choices-make-sorcery-feel-epic/"
+        },
+        {
+          "label": "What Makes Kentucky Route Zero’s Dialogue So Good?",
+          "url": "https://www.rockpapershotgun.com/2016/06/03/kentucky-route-zero-dialogue-analysis/"
+        },
+        {
+          "label": "4-Layers - A Narrative Design Approach (*****)",
+          "url": "http://frictionalgames.blogspot.ca/2014/04/4-layers-narrative-design-approach.html"
+        },
+        {
+          "label": "7 uses of procedural generation that all developers should study",
+          "url": "http://www.gamasutra.com/view/news/262869/7_uses_of_procedural_generation_that_all_developers_should_study.php"
+        },
+        {
+          "label": "Quest Flowchart",
+          "url": "https://www.google.com/search?q=quest+flowchart&amp;safe=off&amp;espv=2&amp;biw=1538&amp;bih=1115&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwih9YKil6_KAhWC2BoKHbyDABIQ_AUIBigB"
+        },
+        {
+          "label": "Alpha Centauri Redux",
+          "url": "http://www.alphacentauriredux.com/blog/"
+        },
+        {
+          "label": "Video Game Tropes",
+          "url": "http://tvtropes.org/pmwiki/pmwiki.php/Main/VideogameTropes"
+        },
+        {
+          "label": "Arcade Game Maker Project (Carnegie Mellon)",
+          "url": "http://www.sei.cmu.edu/productlines/ppl/requirements_model.html"
+        },
+        {
+          "label": "The Grand Unified Genre: a vision for the Adventure Game",
+          "url": "http://www.hardydev.com/2010/04/12/the-grand-unified-genre-a-vision-for-the-adventure-game/"
+        },
+        {
+          "label": "5 Creepy Ways Video Games Are Trying to Get You Addicted | Cracked.com",
+          "url": "http://www.cracked.com/article_18461_5-creepy-ways-video-games-are-trying-to-get-you-addicted.html"
+        },
+        {
+          "label": "How to save adventure games",
+          "url": "http://www.pcgamer.com/2011/09/04/dont-quit-how-to-save-adventures-225/"
+        },
+        {
+          "label": "Movie Narrative Chart",
+          "url": "http://xkcd.com/657/"
+        },
+        {
+          "label": "The End of the Adventure Game",
+          "url": "http://www.popmatters.com/pm/post/158240-the-end-of-the-adventure-game/"
+        },
+        {
+          "label": "Tamagotchi Capstone Project",
+          "url": "http://tamacapstone.blogspot.ca/"
+        },
+        {
+          "label": "Game Design (wikipedia)",
+          "url": "http://fr.wikipedia.org/wiki/Game_design"
+        },
+        {
+          "label": "Level 1: Overview / What is a Game?",
+          "url": "http://gamedesignconcepts.wordpress.com/2009/06/29/level-1-overview-what-is-a-game/"
+        },
+        {
+          "label": "Deeply Random Thoughts",
+          "url": "http://www.mxac.com.au/drt/"
+        },
+        {
+          "label": "Class diagram examples for RPG",
+          "url": "http://stackoverflow.com/questions/1212149/class-diagram-examples-for-rpg-role-playing-game"
+        },
+        {
+          "label": "5 Good TED Talks On Games",
+          "url": "http://www.upsidelearning.com/blog/index.php/2010/04/23/5-good-ted-talks-on-games/"
+        },
+        {
+          "label": "Gamification",
+          "url": "http://gamification.org/"
+        },
+        {
+          "label": "125 things I learned while developing games",
+          "url": "http://gamasutra.com/blogs/StevenHonders/20150710/248211/125_things_I_learned_while_developing_games.php"
+        },
+        {
+          "label": "I Like Interfaces",
+          "url": "http://ilikeinterfaces.com/tag/moon/"
+        },
+        {
+          "label": "Level Design",
+          "url": "http://level-design.org/"
+        },
+        {
+          "label": "Game UI elements",
+          "url": "https://www.google.ca/search?q=game+ui+elements"
+        },
+        {
+          "label": "KODP - Anatomy of a scene",
+          "url": "http://kingofdragonpass.blogspot.ca/2013/08/anatomy-of-scene.html"
+        },
+        {
+          "label": "Left or Right",
+          "url": "https://www.youtube.com/watch?v=X05TDsoSg2Y"
+        },
+        {
+          "label": "Rules for making games",
+          "url": "http://v21.io/blog/rules/"
+        },
+        {
+          "label": "Postmortem: Failbetter Games&#39; Sunless Sea",
+          "url": "http://www.gamasutra.com/view/news/237657/Postmortem_Failbetter_Games_Sunless_Sea.php"
+        },
+        {
+          "label": "Emily Short - The Walking Dead",
+          "url": "http://emshort.wordpress.com/2013/04/25/the-walking-dead-telltale/#more-5657"
+        },
+        {
+          "label": "Pixar’s Rules of Storytelling Adapted For Web Designers",
+          "url": "http://demosthenes.info/blog/751/Pixars-Rules-of-Storytelling-Adapted-For-Web-Designers"
+        },
+        {
+          "label": "The Guerrilla Guide to Game Code",
+          "url": "http://www.gamasutra.com/view/feature/130693/the_guerrilla_guide_to_game_code.php?print=1"
+        },
+        {
+          "label": "Richard E Flanagan - Interactive design...",
+          "url": "http://richardeflanagan.com/"
+        },
+        {
+          "label": "Adventures in Interfacing Part II: Interfacin...",
+          "url": "http://www.hardydev.com/2010/02/13/adventures-in-interfacing-part-ii-interfacing-the-adventure/"
+        },
+        {
+          "label": "Effectively Organize Your Game’s Developmen...",
+          "url": "http://active.tutsplus.com/articles/game-design/effectively-organize-your-games-development-with-a-game-design-document/"
+        },
+        {
+          "label": "Applied Game Design - Types of Conflict",
+          "url": "http://bbrathwaite.wordpress.com/2009/02/13/types-of-conflict-narrative-in-games/"
+        },
+        {
+          "label": "Celtx",
+          "url": "https://www.celtx.com/"
+        },
+        {
+          "label": "Monomyth - Wikipedia, the free encyclopedia",
+          "url": "http://en.wikipedia.org/wiki/Monomyth"
+        }
+      ]
+    },
+    "Games_Builders": {
+      "title": "Games_Builders",
+      "kind": "link",
+      "links": [
+        {
+          "label": "InkleWriter",
+          "url": "http://www.inklestudios.com/inklewriter/"
+        },
+        {
+          "label": "Maker3d - rpg creator software",
+          "url": "http://maker3d.tk/"
+        },
+        {
+          "label": "Versu",
+          "url": "http://www.versu.com/"
+        },
+        {
+          "label": "Unity Resources",
+          "url": "http://www.virtualgamelab.com/2/post/2010/04/unity-resources.html"
+        },
+        {
+          "label": "Learn Unity 3D",
+          "url": "http://learnunity3d.com/"
+        },
+        {
+          "label": "GameSalad",
+          "url": "http://gamesalad.com/"
+        },
+        {
+          "label": "KODU Game Lab",
+          "url": "http://fuse.microsoft.com/kodu/"
+        },
+        {
+          "label": "UNITY: Game Development Tool",
+          "url": "http://unity3d.com/"
+        },
+        {
+          "label": "UDK - Unreal Development Kit - Epic Games",
+          "url": "http://www.udk.com/"
+        },
+        {
+          "label": "Delta Engine",
+          "url": "http://deltaengine.net/"
+        },
+        {
+          "label": "RPG Maker",
+          "url": "http://www.rpgmakerweb.com/"
+        },
+        {
+          "label": "Description de Game Blocks",
+          "url": "http://www.rockpapershotgun.com/2012/12/20/deus-ex-writer-creates-tool-for-teaching-development/"
+        },
+        {
+          "label": "Scirra - Construct 2",
+          "url": "https://www.scirra.com/"
+        },
+        {
+          "label": "I7 Thing Creator",
+          "url": "http://nitku.net/if/thingcreator/"
+        },
+        {
+          "label": "Game Develop (français)",
+          "url": "http://www.en.compilgames.net/indexFR.html"
+        },
+        {
+          "label": "Unity 3D Platformer Tutorial",
+          "url": "http://download.unity3d.com/support/resources/files/3DPlatformTutorial.pdf"
+        },
+        {
+          "label": "Game builder software",
+          "url": "http://alternativeto.net/software/game-maker/"
+        },
+        {
+          "label": "Unity Scripts",
+          "url": "http://www.unifycommunity.com/wiki/index.php?title=Scripts"
+        },
+        {
+          "label": "Wintermute Engine",
+          "url": "http://dead-code.org/home/index.php/about/"
+        },
+        {
+          "label": "Scratch | Home | imagine, program, share",
+          "url": "http://scratch.mit.edu/"
+        },
+        {
+          "label": "Elan Ruskin: Rule Databases for Contextual Dialog and Game Logic",
+          "url": "http://www.valvesoftware.com/publications/2012/GDC2012_Ruskin_Elan_DynamicDialog.pdf"
+        },
+        {
+          "label": "Elan Ruskin: AI-driven Dynamic Dialog through Fuzzy Pattern Matching",
+          "url": "http://www.gdcvault.com/play/1015528/AI-driven-Dynamic-Dialog-through"
+        },
+        {
+          "label": "Articy:Draft",
+          "url": "https://www.youtube.com/user/NevigoGmbH/videos"
+        },
+        {
+          "label": "The Lion&#39;s Song (making of timelapse video)",
+          "url": "https://www.youtube.com/watch?v=Sk9w3BEmlXg"
+        },
+        {
+          "label": "Dedalus",
+          "url": "https://github.com/pistacchio/Dedalus/"
+        },
+        {
+          "label": "Unity 2D",
+          "url": "http://blogs.unity3d.com/2013/11/12/unity-4-3-2d-game-development-overview/"
+        },
+        {
+          "label": "CocosBuilder",
+          "url": "http://cocosbuilder.com/"
+        },
+        {
+          "label": "Adventure Maker",
+          "url": "http://www.adventuremaker.com/"
+        },
+        {
+          "label": "Game Maker alternatives",
+          "url": "http://forum.nintendocfc.com/showthread.php?tid=310"
+        },
+        {
+          "label": "ENIGMA",
+          "url": "http://enigma-dev.org/"
+        }
+      ]
+    },
+    "Games_Dev": {
+      "title": "Games_Dev",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Building multiplayer games with Angular",
+          "url": "http://www.ng-newsletter.com/posts/building-games-with-angular.html"
+        },
+        {
+          "label": "Amit&#39;s Game Programming Info",
+          "url": "http://www-cs-students.stanford.edu/~amitp/gameprog.html"
+        },
+        {
+          "label": "Making  a game out of the web",
+          "url": "http://camelotunchained.com/en/making-a-game-out-of-the-web/"
+        },
+        {
+          "label": "Epic Win",
+          "url": "http://www.rexbox.co.uk/epicwin/"
+        },
+        {
+          "label": "Video Games Scripts",
+          "url": "http://www.vgscripts.com/scripts/the-dig/"
+        },
+        {
+          "label": "IvamK Lib - JavaScript library for 2D...",
+          "url": "http://lib.ivank.net/"
+        },
+        {
+          "label": "entity for games",
+          "url": "http://www.richardlord.net/blog/what-is-an-entity-framework"
+        },
+        {
+          "label": "Loom - The Engine Company",
+          "url": "http://theengine.co/"
+        },
+        {
+          "label": "Camera Mapping Tutorial | Blender Texturing | Blender Guru",
+          "url": "http://www.blenderguru.com/camera-mapping/"
+        },
+        {
+          "label": "Phaser (Typescript / WebGL)",
+          "url": "http://phaser.io/"
+        },
+        {
+          "label": "Shattered Throne",
+          "url": "http://www.checkmarkgames.com/2012/03/building-strategy-game-ai.html"
+        },
+        {
+          "label": "Code InComplete (js game engine)",
+          "url": "http://codeincomplete.com/archive/"
+        },
+        {
+          "label": "Game Programming Patterns",
+          "url": "http://gameprogrammingpatterns.com/"
+        },
+        {
+          "label": "Ejecta - Fast JavaScript, Canvas &amp; Audio...",
+          "url": "http://impactjs.com/ejecta"
+        },
+        {
+          "label": "Getting started with the Flash Professional Toolkit for CreateJS",
+          "url": "http://www.adobe.com/devnet/createjs/articles/getting-started.html"
+        },
+        {
+          "label": "Gaming on Google Cloud Platform",
+          "url": "https://cloud.google.com/solutions/gaming"
+        },
+        {
+          "label": "Starling JS (in TypeScript!)",
+          "url": "http://gamua.com/area-51/"
+        },
+        {
+          "label": "FlashCode - The Flash to HTML5 and Objective-C Converter",
+          "url": "http://flashcode.cryptic-apps.com/"
+        },
+        {
+          "label": "ZMachine.NET",
+          "url": "http://zmachine.codeplex.com/"
+        }
+      ]
+    },
+    "Misc_Dev": {
+      "title": "Misc_Dev",
+      "kind": "link",
+      "links": [
+        {
+          "label": "A successful Git branching model",
+          "url": "http://nvie.com/posts/a-successful-git-branching-model/"
+        },
+        {
+          "label": "Google Bookmarks in C#",
+          "url": "http://www.codeproject.com/KB/IP/GoogleBookmarks.aspx"
+        },
+        {
+          "label": "Google Bookmarks API",
+          "url": "http://www.mmartins.com/mmartins/googlebookmarksapi/"
+        },
+        {
+          "label": "Arduino",
+          "url": "http://www.arduino.cc/"
+        },
+        {
+          "label": "StereoPhoto Maker",
+          "url": "http://stereo.jpn.org/eng/stphmkr/"
+        },
+        {
+          "label": "YAML - Wikipedia, the free encyclopedia",
+          "url": "http://en.wikipedia.org/wiki/YAML"
+        },
+        {
+          "label": "Mac OS Lion On VirtualBox _ iATKOS L1 - Ba Le - Picasa Web Albums",
+          "url": "https://picasaweb.google.com/112861679979937621871/MacOSLionOnVirtualBox_IATKOSL1#5658770070858872354"
+        },
+        {
+          "label": "iATKOS L1 - Hackintosh LION 10.7.1 (PC) - Mecho Download",
+          "url": "http://www.mechodownload.com/forum/macintosh-programs/1123447-iatkos-l1-hackintosh-lion-10-7-1-pc-Full-Free-Downloads-Keygen-Crack-Serial-Activator-Free-Hosts.html"
+        }
+      ]
+    },
+    "Game_AI": {
+      "title": "Game_AI",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Dragon Age Tactics",
+          "url": "http://dragonage.wikia.com/wiki/Tactics_(Origins)"
+        },
+        {
+          "label": "Best programming based games",
+          "url": "http://stackoverflow.com/questions/25952/best-programming-based-games"
+        },
+        {
+          "label": "DarwinBots",
+          "url": "http://wiki.darwinbots.com/w/Main_Page"
+        },
+        {
+          "label": "Designing AI Algorithms For Turn-Based...",
+          "url": "http://www.gamasutra.com/view/feature/129959/designing_ai_algorithms_for_.php?print=1"
+        },
+        {
+          "label": "Building Expert Systems in Prolog",
+          "url": "http://www.amzi.com/ExpertSystemsInProlog/"
+        },
+        {
+          "label": "MegaHAL Chatbot",
+          "url": "http://bruce-lab.blogspot.com.es/2011/09/chatbot-megahal-ported-to-flash.html"
+        },
+        {
+          "label": "Top 10 Most Influential AI Games",
+          "url": "http://aigamedev.com/open/highlights/top-ai-games/"
+        },
+        {
+          "label": "Why I Am Obsessed With Conversation Models",
+          "url": "http://www.gamasutra.com/blogs/EmilyShort/20150609/245530/Tightening_the_WorldPlot_Interface_or_Why_I_Am_Obsessed_With_Conversation_Models.php"
+        },
+        {
+          "label": "TinyProlog (js)",
+          "url": "https://gist.github.com/fogus/1281919"
+        },
+        {
+          "label": "Encog",
+          "url": "http://www.heatonresearch.com/encog"
+        },
+        {
+          "label": "The Nature of Code",
+          "url": "http://natureofcode.com/book/chapter-6-autonomous-agents/"
+        },
+        {
+          "label": "Game of Clue",
+          "url": "http://www.codeproject.com/Articles/96869/The-Game-of-Clue-C-2010"
+        },
+        {
+          "label": "Yield Prolog",
+          "url": "http://yieldprolog.sourceforge.net/"
+        },
+        {
+          "label": "Rule-Based-AI - GPWiki",
+          "url": "http://content.gpwiki.org/index.php/Rule-Based-AI"
+        },
+        {
+          "label": "Intelligence Artificielle en Visual Basic (IAVB)",
+          "url": "http://patrice.dargenton.free.fr/ia/iavb/"
+        },
+        {
+          "label": "Randomly generated story",
+          "url": "http://gamedev.stackexchange.com/questions/11777/randomly-generated-story"
+        },
+        {
+          "label": "Clips Tutorials: Table of Contents",
+          "url": "http://iweb.tntech.edu/bhuguenard/ds6530/ClipsTutorial/tableOfContents.htm"
+        },
+        {
+          "label": "Man, Marriage and Machine – Adventures...",
+          "url": "http://www.codeproject.com/Articles/179375/Man-Marriage-and-Machine-Adventures-in-Artificial"
+        },
+        {
+          "label": "Prolog Tutorial -- 7.3",
+          "url": "http://www.csupomona.edu/~jrfisher/www/prolog_tutorial/7_3.html"
+        },
+        {
+          "label": "Prolog in Javascript",
+          "url": "http://ioctl.org/logic/prolog-latest"
+        },
+        {
+          "label": "SourceForge.net: C#Prolog - Project Web...",
+          "url": "http://cs-prolog.sourceforge.net/"
+        },
+        {
+          "label": "P#: A concurrent Prolog for .NET",
+          "url": "http://homepages.inf.ed.ac.uk/stg/research/Psharp/"
+        }
+      ]
+    },
+    "Music": {
+      "title": "Music",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Video game soundtracks",
+          "url": "https://www.reddit.com/r/GetMotivated/comments/46qq9n/discussion_what_video_game_soundtracks_are_best/"
+        },
+        {
+          "label": "Debussy - Arabesque #1",
+          "url": "http://www.youtube.com/watch?v=A6s49OKp6aE&amp;feature=player_embedded"
+        },
+        {
+          "label": "celestial aeon project - jamendo",
+          "url": "http://www.jamendo.com/en/artist/celestial.aeon.project"
+        },
+        {
+          "label": "musique - darkness and unease",
+          "url": "http://incompetech.com/m/c/royalty-free/?keywords=035&amp;Search=Search"
+        },
+        {
+          "label": "Royalty Free Music",
+          "url": "http://incompetech.com/m/c/royalty-free/"
+        },
+        {
+          "label": "LMMS - Linux MultiMedia Studio",
+          "url": "http://lmms.sourceforge.net/"
+        },
+        {
+          "label": "Reaper - Audio Production",
+          "url": "http://www.reaper.fm/index.php"
+        },
+        {
+          "label": "_songsmith",
+          "url": "http://research.microsoft.com/en-us/um/redmond/projects/songsmith/"
+        },
+        {
+          "label": "LooperMan",
+          "url": "http://www.looperman.com/"
+        },
+        {
+          "label": "VST plugins",
+          "url": "http://free-plugin-list.com/"
+        },
+        {
+          "label": "tindeck",
+          "url": "http://tindeck.com/"
+        },
+        {
+          "label": "MAGIX Music Maker",
+          "url": "http://www.magix.com/us/music-maker/detail/?id=2&amp;AffiliateID=29&amp;partnerid=9031"
+        },
+        {
+          "label": "musique - Afrika Korps",
+          "url": "http://www.youtube.com/watch?v=5S9POFLrLyU&amp;feature=related"
+        },
+        {
+          "label": "Otomata",
+          "url": "http://www.earslap.com/projectslab/otomata"
+        },
+        {
+          "label": "UJAM",
+          "url": "http://www.ujam.com/"
+        },
+        {
+          "label": "Free sounds",
+          "url": "http://gamedev.stackexchange.com/questions/8/where-can-i-find-free-sounds-for-my-game"
+        },
+        {
+          "label": "__tutorial LMMS add virtual instrument",
+          "url": "http://brycecoulson.com/tutorials/vstinstruments/"
+        },
+        {
+          "label": "Acid Defender",
+          "url": "http://www.rockpapershotgun.com/2012/11/12/a-multitude-of-synths-acid-defender/"
+        },
+        {
+          "label": "The Infinite Jukebox",
+          "url": "http://musicmachinery.com/2012/11/12/the-infinite-jukebox/"
+        },
+        {
+          "label": "Free Music Archive",
+          "url": "http://freemusicarchive.org/"
+        },
+        {
+          "label": "__free virtual instruments",
+          "url": "http://dskmusic.com/"
+        },
+        {
+          "label": "Audacity",
+          "url": "http://audacity.sourceforge.net/"
+        },
+        {
+          "label": "Free music",
+          "url": "http://gamedev.stackexchange.com/questions/14/where-can-i-find-free-music-for-my-game"
+        },
+        {
+          "label": "Nature Sounds",
+          "url": "http://naturesoundsfor.me/"
+        },
+        {
+          "label": "Band In a Box",
+          "url": "http://www.pgmusic.com/"
+        },
+        {
+          "label": "sound fonts",
+          "url": "http://www.newgrounds.com/bbs/topic/1163046"
+        },
+        {
+          "label": "FreeSound.org",
+          "url": "http://www.freesound.org/"
+        },
+        {
+          "label": "The ReBirth Museum",
+          "url": "http://www.rebirthmuseum.com/"
+        },
+        {
+          "label": "Web Synth",
+          "url": "http://www.websynths.com/"
+        },
+        {
+          "label": "Typatone",
+          "url": "http://www.typatone.com/"
+        },
+        {
+          "label": "Background noises",
+          "url": "http://www.reddit.com/r/books/comments/28ncbi/whats_a_nice_website_for_background_noise_whilst/"
+        },
+        {
+          "label": "Spektrmodule",
+          "url": "http://spkmdl.libsyn.com/"
+        },
+        {
+          "label": "Eminence Front",
+          "url": "https://www.youtube.com/watch?v=5HTVMh7fur4"
+        },
+        {
+          "label": "Royalty free music",
+          "url": "https://musopen.org/"
+        },
+        {
+          "label": "Dark Ambient Music (youtube)",
+          "url": "http://www.youtube.com/watch?v=CpmAD4gcLMo"
+        },
+        {
+          "label": "SoundCloud",
+          "url": "https://soundcloud.com/explore"
+        },
+        {
+          "label": "Music for programming",
+          "url": "http://www.musicforprogramming.net/"
+        },
+        {
+          "label": "Youtube Audio Library",
+          "url": "https://www.youtube.com/audiolibrary"
+        }
+      ]
+    },
+    "RPG": {
+      "title": "RPG",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Beginners Guide to RPG - reddit/r/rpg",
+          "url": "https://www.reddit.com/r/rpg/wiki/beginnersguide"
+        },
+        {
+          "label": "Role Playing Game System",
+          "url": "http://en.wikipedia.org/wiki/Basic_Role-Playing"
+        },
+        {
+          "label": "Monster Master - beat the opponent in this addictive RPG card game",
+          "url": "http://www.funny-games.biz/monstermaster.html"
+        },
+        {
+          "label": "Vassal Afrika Korps module",
+          "url": "http://www.vassalengine.org/wiki/Module:Afrika_Korps"
+        },
+        {
+          "label": "Trading Card Game",
+          "url": "http://mtgrares.blogspot.com/"
+        },
+        {
+          "label": "jPortal - Fantasy card strategy game against computer opponent",
+          "url": "http://code.google.com/p/arena-card-game/wiki/MagarenaArtificialIntelligence"
+        },
+        {
+          "label": "Urban Dead",
+          "url": "http://en.wikipedia.org/wiki/Urban_Dead"
+        },
+        {
+          "label": "How to develop RPG Damage Formulas",
+          "url": "http://gamedev.stackexchange.com/questions/14309/how-to-develop-rpg-damage-formulas"
+        },
+        {
+          "label": "Microlite d20",
+          "url": "http://www.microlite20.net/originalm20/purest-essence/"
+        },
+        {
+          "label": "TripleA - Axis and Allied game",
+          "url": "http://en.wikipedia.org/wiki/TripleA"
+        },
+        {
+          "label": "Armageddon Empires",
+          "url": "http://www.crypticcomet.com/games/AE/ae_Tutorials.html"
+        },
+        {
+          "label": "Adventuria RPG",
+          "url": "http://www.rpglaboratory.com/adventuria_online_rpg"
+        },
+        {
+          "label": "D20 System",
+          "url": "http://www.wizards.com/default.asp?x=d20/article/srd35"
+        },
+        {
+          "label": "Hack &amp; Slash RPG - A Unity3D Game Engine...",
+          "url": "http://www.burgzergarcade.com/hack-slash-rpg-unity3d-game-engine-tutorial"
+        },
+        {
+          "label": "Board Game Designers Forum",
+          "url": "http://www.bgdf.com/"
+        },
+        {
+          "label": "Board and Card Games (beta)",
+          "url": "http://boardgames.stackexchange.com/questions/909/computer-ai-programs-for-axis-and-allies"
+        },
+        {
+          "label": "RogueTemple",
+          "url": "http://www.roguetemple.com/"
+        },
+        {
+          "label": "Domain of Heroes",
+          "url": "http://domainofheroes.com/HowToPlay.aspx"
+        },
+        {
+          "label": "MagicDuel adventure",
+          "url": "http://magicduel.com/"
+        },
+        {
+          "label": "RogueBasin",
+          "url": "http://roguebasin.roguelikedevelopment.org/index.php?title=Main_Page"
+        },
+        {
+          "label": "jPortal",
+          "url": "http://jportalgame.de/"
+        },
+        {
+          "label": "Dungeon Adventure cards- card driven dungeon bash",
+          "url": "http://ernysplace.blogspot.co.uk/2013/04/dungeon-adventure-cards-card-driven.html"
+        },
+        {
+          "label": "Dead Simple RPG (+FUBAR)",
+          "url": "https://deadsimplerpg.wordpress.com/about/"
+        },
+        {
+          "label": "DriveThruRPG",
+          "url": "http://www.drivethrurpg.com/index.php"
+        },
+        {
+          "label": "Balancing Turn-Based RPGs",
+          "url": "http://gamedevelopment.tutsplus.com/series/balancing-turn-based-rpgs--gamedev-12702"
+        },
+        {
+          "label": "Pathfinder Adventure Card Game",
+          "url": "http://www.rockpapershotgun.com/2013/09/17/cardboard-children-pathfinder-adventure-card-game/"
+        },
+        {
+          "label": "Seven-​​Day Rogue­like",
+          "url": "http://7drl.org/"
+        },
+        {
+          "label": "HyperRogue",
+          "url": "http://roguetemple.com/z/hyper.php"
+        },
+        {
+          "label": "Level 10: Final Boss",
+          "url": "http://gamebalanceconcepts.wordpress.com/2010/09/08/level-10-final-boss/"
+        },
+        {
+          "label": "Level 9: Intransitive Mechanics",
+          "url": "http://gamebalanceconcepts.wordpress.com/2010/09/01/level-9-intransitive-mechanics/"
+        },
+        {
+          "label": "Level 8: Metrics and Statistics",
+          "url": "http://gamebalanceconcepts.wordpress.com/2010/08/25/level-8-metrics-and-statistics/"
+        },
+        {
+          "label": "Level 7: Advancement, Progression and Pacing",
+          "url": "http://gamebalanceconcepts.wordpress.com/2010/08/18/level-7-advancement-progression-and-pacing/"
+        },
+        {
+          "label": "Level 6: Situational Balance",
+          "url": "http://gamebalanceconcepts.wordpress.com/2010/08/11/level-6-situational-balance/"
+        },
+        {
+          "label": "Level 5: Probability and Randomness Gone Horribly Wrong",
+          "url": "http://gamebalanceconcepts.wordpress.com/2010/08/04/level-5-probability-and-randomness-gone-horribly-wrong/"
+        },
+        {
+          "label": "Level 4: Probability and Randomness",
+          "url": "http://gamebalanceconcepts.wordpress.com/2010/07/28/level-4-probability-and-randomness/"
+        },
+        {
+          "label": "Level 3: Transitive Mechanics and Cost Curves",
+          "url": "http://gamebalanceconcepts.wordpress.com/2010/07/21/level-3-transitive-mechanics-and-cost-curves/"
+        },
+        {
+          "label": "Level 2: Numeric Relationships",
+          "url": "http://gamebalanceconcepts.wordpress.com/2010/07/14/level-2-numeric-relationships/"
+        },
+        {
+          "label": "Level 1: Intro to Game Balance",
+          "url": "http://gamebalanceconcepts.wordpress.com/2010/07/07/level-1-intro-to-game-balance/"
+        },
+        {
+          "label": "How To Balance an MMO, And How To Stop",
+          "url": "http://www.eldergame.com/2010/11/how-to-balance-an-mmo-and-how-to-stop/"
+        },
+        {
+          "label": "MMORPG game balancing",
+          "url": "http://gamedev.stackexchange.com/questions/21208/mmorpg-game-balancing"
+        },
+        {
+          "label": "Brogue",
+          "url": "https://sites.google.com/site/broguegame/home"
+        },
+        {
+          "label": "Atlas Games: Charting New Realms of Imagination",
+          "url": "http://www.atlas-games.com/product_tables/AG1001.php"
+        }
+      ]
+    },
+    "Cool": {
+      "title": "Cool",
+      "kind": "link",
+      "links": [
+        {
+          "label": "YouTube - PXstriker&#39;s Channel",
+          "url": "http://www.youtube.com/user/PXstriker"
+        },
+        {
+          "label": "rig",
+          "url": "http://blenderartists.org/forum/showthread.php?t=204814"
+        },
+        {
+          "label": "Sculptris",
+          "url": "http://www.pixologic.com/sculptris/"
+        },
+        {
+          "label": "_Lightworks Video Editor",
+          "url": "http://lightworksbeta.com/"
+        },
+        {
+          "label": "Blender Tutorials Downloads Videos &amp; Education – Blender Cookie – Using the Human Meta-Rig",
+          "url": "http://www.blendercookie.com/2010/07/30/using-the-human-meta-rig/"
+        },
+        {
+          "label": "TF2 low poly models",
+          "url": "http://tomtallian.com/"
+        },
+        {
+          "label": "Space Engine",
+          "url": "http://en.spaceengine.org/"
+        },
+        {
+          "label": "chrome://flags (check for smooth scrolling)",
+          "url": "chrome://flags/"
+        },
+        {
+          "label": "Blender e-shop",
+          "url": "http://www.blender3d.org/e-shop/product_info.php?products_id=112&amp;currency=USD"
+        },
+        {
+          "label": "Hatsune Miku rigged Blender character available at BlenderNation",
+          "url": "http://www.blendernation.com/2008/12/17/hatsune-miku-rigged-blender-character-available/"
+        }
+      ]
+    },
+    "wonderfl": {
+      "title": "wonderfl",
+      "kind": "link",
+      "links": [
+        {
+          "label": "wonderfl (flip book pages)",
+          "url": "http://wonderfl.net/c/7NRD"
+        },
+        {
+          "label": "wonderfl (electric effect)",
+          "url": "http://wonderfl.net/c/7prR"
+        },
+        {
+          "label": "wonderfl (comet)",
+          "url": "http://wonderfl.net/c/dHyt"
+        },
+        {
+          "label": "wonderfl (2 smoke trails)",
+          "url": "http://wonderfl.net/c/amoS"
+        },
+        {
+          "label": "wonderfl (card burning)",
+          "url": "http://wonderfl.net/c/jfDi"
+        },
+        {
+          "label": "wonderfl (liquid rocks)",
+          "url": "http://wonderfl.net/c/jbI2"
+        },
+        {
+          "label": "wonderfl (stardust)",
+          "url": "http://wonderfl.net/c/203S"
+        },
+        {
+          "label": "wonderfl (radio wave)",
+          "url": "http://wonderfl.net/c/gK2I"
+        },
+        {
+          "label": "wonderfl (flowing balls)",
+          "url": "http://wonderfl.net/c/p00C"
+        },
+        {
+          "label": "wonderfl (cool rot 3d) ** low cpu **",
+          "url": "http://wonderfl.net/c/oZsg"
+        },
+        {
+          "label": "wonderfl (force field)",
+          "url": "http://wonderfl.net/c/odSk"
+        },
+        {
+          "label": "wonderfl (flashlight in clouds)",
+          "url": "http://wonderfl.net/c/9WBu"
+        },
+        {
+          "label": "wonderfl (flashes)",
+          "url": "http://wonderfl.net/c/kT7H"
+        },
+        {
+          "label": "wonderfl (pieuvre?)",
+          "url": "http://wonderfl.net/c/mIzf"
+        },
+        {
+          "label": "wonderfl (hypnotic)",
+          "url": "http://wonderfl.net/c/8iNq"
+        },
+        {
+          "label": "wonderfl (cometes) ** voir le code **",
+          "url": "http://wonderfl.net/c/uIth"
+        },
+        {
+          "label": "wonderfl (bright star)",
+          "url": "http://wonderfl.net/c/dn8V"
+        },
+        {
+          "label": "wonderfl (hypnotic bacterial)",
+          "url": "http://wonderfl.net/c/eyH0"
+        },
+        {
+          "label": "wonderfl (spirit moving)",
+          "url": "http://wonderfl.net/c/nTV0"
+        },
+        {
+          "label": "wonderfl (fire)",
+          "url": "http://wonderfl.net/c/mMPQ"
+        },
+        {
+          "label": "wonderfl (mesmer)",
+          "url": "http://wonderfl.net/c/5sCA"
+        },
+        {
+          "label": "wonderfl (fuzzy wave)",
+          "url": "http://wonderfl.net/c/ukwz"
+        },
+        {
+          "label": "wonderfl (rayons)",
+          "url": "http://wonderfl.net/c/irBf"
+        },
+        {
+          "label": "wonderfl (spin I say)",
+          "url": "http://wonderfl.net/c/Agav"
+        },
+        {
+          "label": "wonderfl (spiral star)",
+          "url": "http://wonderfl.net/c/rE0m"
+        },
+        {
+          "label": "wonderfl (clouds)",
+          "url": "http://wonderfl.net/c/tDTf"
+        },
+        {
+          "label": "wonderfl (plasma couleur)",
+          "url": "http://wonderfl.net/c/sina"
+        },
+        {
+          "label": "wonderfl (vapeur)",
+          "url": "http://wonderfl.net/c/981Z"
+        },
+        {
+          "label": "wonderfl (image distort - good)",
+          "url": "http://wonderfl.net/c/bT0l"
+        },
+        {
+          "label": "wonderfl (fluid music lamp)",
+          "url": "http://wonderfl.net/c/jeXJ"
+        },
+        {
+          "label": "wonderfl (mosaic smoke)",
+          "url": "http://wonderfl.net/c/sSGe"
+        },
+        {
+          "label": "wonderfl (hypnotic circle)",
+          "url": "http://wonderfl.net/c/eNED"
+        },
+        {
+          "label": "wonderfl (plasma)",
+          "url": "http://wonderfl.net/c/dqWb"
+        },
+        {
+          "label": "wonderfl (eclipse)",
+          "url": "http://wonderfl.net/c/kAAo"
+        },
+        {
+          "label": "wonderfl (simple steam)",
+          "url": "http://wonderfl.net/c/iUnD"
+        },
+        {
+          "label": "wonderfl (spinning figures)",
+          "url": "http://wonderfl.net/c/4EYX"
+        },
+        {
+          "label": "wonderfl (filaments 2d)",
+          "url": "http://wonderfl.net/c/oXe7"
+        },
+        {
+          "label": "wonderfl (flamethrower)",
+          "url": "http://wonderfl.net/c/dUXf"
+        },
+        {
+          "label": "wonderfl (vers)",
+          "url": "http://wonderfl.net/c/goGj"
+        },
+        {
+          "label": "wonderfl (magic moving spots)",
+          "url": "http://wonderfl.net/c/7Cbm"
+        },
+        {
+          "label": "wonderfl (explosion de lumiere)",
+          "url": "http://wonderfl.net/c/sFXf"
+        },
+        {
+          "label": "wonderfl (hypnotic colorful)",
+          "url": "http://wonderfl.net/c/60Tn"
+        },
+        {
+          "label": "wonderfl (far away fireworks)",
+          "url": "http://wonderfl.net/c/4qCr"
+        },
+        {
+          "label": "wonderfl (hypnotic fast)",
+          "url": "http://wonderfl.net/c/dapL"
+        },
+        {
+          "label": "wonderfl (infinity zoom)",
+          "url": "http://wonderfl.net/c/kUyk"
+        },
+        {
+          "label": "wonderfl (filaments 3d)",
+          "url": "http://wonderfl.net/c/diu3"
+        },
+        {
+          "label": "wonderfl (mycelium)",
+          "url": "http://wonderfl.net/c/RwYt"
+        },
+        {
+          "label": "wonderfl (hypnotic super fast)",
+          "url": "http://wonderfl.net/c/4KL8"
+        },
+        {
+          "label": "wonderfl (nebulae collapse GOOD)",
+          "url": "http://wonderfl.net/c/ieW6"
+        },
+        {
+          "label": "wonderfl (pulsating blob)",
+          "url": "http://wonderfl.net/c/rzQi"
+        },
+        {
+          "label": "wonderfl (spring particle)",
+          "url": "http://wonderfl.net/c/fb3l"
+        },
+        {
+          "label": "wonderfl (explosion continuelle)",
+          "url": "http://wonderfl.net/c/gfxy"
+        },
+        {
+          "label": "wonderfl",
+          "url": "http://wonderfl.net/search?y=0&amp;page=13&amp;q=blendmode&amp;x=0"
+        },
+        {
+          "label": "wonderfl (globules)",
+          "url": "http://wonderfl.net/c/eqAO"
+        },
+        {
+          "label": "wonderfl (50 old school effects)",
+          "url": "http://wonderfl.net/c/bVZM"
+        },
+        {
+          "label": "wonderfl (light burst)",
+          "url": "http://wonderfl.net/c/f5N4"
+        },
+        {
+          "label": "wonderfl (explosion w/sound)",
+          "url": "http://wonderfl.net/c/g9Cm"
+        },
+        {
+          "label": "wonderfl (flamethrower-2)",
+          "url": "http://wonderfl.net/c/oD47"
+        },
+        {
+          "label": "wonderfl (metaballs)",
+          "url": "http://wonderfl.net/c/28CU"
+        }
+      ]
+    },
+    "Adventure": {
+      "title": "Adventure",
+      "kind": "link",
+      "links": [
+        {
+          "label": "SVH: Un site dont vous êtes le héros",
+          "url": "http://svh.escadenca.fr/"
+        },
+        {
+          "label": "Lassie Shepherd",
+          "url": "http://lassiegames.com/lassie/download/lassie-shepherd/"
+        },
+        {
+          "label": "Frotz.NET",
+          "url": "http://frotznet.codeplex.com/"
+        },
+        {
+          "label": "Cloak of Darkness - getting started in IF",
+          "url": "http://www.firthworks.com/roger/cloak/"
+        },
+        {
+          "label": "One Page Dungeon Contest",
+          "url": "http://campaignwiki.org/wiki/DungeonMaps/HomePage"
+        },
+        {
+          "label": "Adventure (game) in Prolog",
+          "url": "http://www.amzi.com/AdventureInProlog/apreface.php"
+        },
+        {
+          "label": "Project Aon: Main / Flight from the Dark (browse)",
+          "url": "http://www.projectaon.org/en/Main/FlightFromTheDark"
+        },
+        {
+          "label": "Roger Firth&#39;s home page",
+          "url": "http://www.firthworks.com/roger/"
+        },
+        {
+          "label": "Twine: a tool for creating interactive stories",
+          "url": "http://gimcrackd.com/etc/src/"
+        },
+        {
+          "label": "Le manoir du chêne gauche",
+          "url": "http://chg96.free.fr/loup-solitaire/version1/lmdt/"
+        },
+        {
+          "label": "Gamebook - Wikipedia, the free encyclopedia",
+          "url": "http://en.wikipedia.org/wiki/Gamebook"
+        },
+        {
+          "label": "Grumpy Gamer Why Adventure Games Suck",
+          "url": "http://grumpygamer.com/2152210"
+        },
+        {
+          "label": "Blue Lacuna: An Interactive Novel by Aaron A. Reed",
+          "url": "http://www.lacunastory.com/"
+        },
+        {
+          "label": "Gamebook Links",
+          "url": "http://www.gamebooks.org/show_links.php?type=gamebooks"
+        },
+        {
+          "label": "Home (scarehome) adrift - java",
+          "url": "http://sites.google.com/site/scarehome/"
+        },
+        {
+          "label": "How to write a FF Adventure",
+          "url": "http://www.fightingfantasygamebooks.com/index.php?option=com_content&amp;view=article&amp;id=112&amp;Itemid=37"
+        },
+        {
+          "label": "Multiple choice games",
+          "url": "http://www.choiceofgames.com/"
+        },
+        {
+          "label": "Client-side interactive fiction framework",
+          "url": "http://undum.com/"
+        },
+        {
+          "label": "The Interactive Fiction Archive",
+          "url": "http://www.ifarchive.org/"
+        },
+        {
+          "label": "Storychoices - Building stories with interactive narrative platforms",
+          "url": "http://wiki.failbettergames.com/story-platforms"
+        },
+        {
+          "label": "Godpatterns: How to make an Adventure Game",
+          "url": "http://www.godpatterns.com/2010/08/how-to-make-adventure-game.html"
+        },
+        {
+          "label": "Quest - Make text adventure games without programming",
+          "url": "http://www.textadventures.co.uk/quest/"
+        },
+        {
+          "label": "Adventure Games: Authoring Systems",
+          "url": "http://members.tripod.com/~virtual_cat/games/complete.html"
+        }
+      ]
+    },
+    "Games": {
+      "title": "Games",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Kongregate",
+          "url": "http://www.kongregate.com/"
+        },
+        {
+          "label": "Adventure Classic Gaming",
+          "url": "http://www.adventureclassicgaming.com/"
+        },
+        {
+          "label": "Free Indie Games",
+          "url": "http://www.freeindiegam.es/"
+        },
+        {
+          "label": "List of Worthwhile DOS Games",
+          "url": "https://information2share.wordpress.com/2012/06/04/list-of-worthwhile-dos-games/"
+        },
+        {
+          "label": "tigsource",
+          "url": "http://www.tigsource.com/"
+        },
+        {
+          "label": "Pastelgames",
+          "url": "http://www.kongregate.com/accounts/Pastelgames"
+        },
+        {
+          "label": "ScottJarvis.com: Puppy Arcade 10",
+          "url": "http://scottjarvis.com/page105.htm"
+        },
+        {
+          "label": "Abandonia (games)",
+          "url": "http://www.abandonia.com/"
+        },
+        {
+          "label": "_Photon Storm",
+          "url": "http://www.photonstorm.com/"
+        },
+        {
+          "label": "List of Worthwhile PC Games",
+          "url": "https://information2share.wordpress.com/2012/02/13/list-of-worthwhile-pc-games/"
+        },
+        {
+          "label": "GoG",
+          "url": "http://www.gog.com/en/frontpage"
+        },
+        {
+          "label": "GoG games with good writing",
+          "url": "http://www.gog.com/en/mix/games_with_good_writing"
+        },
+        {
+          "label": "Adventure Gamers",
+          "url": "http://www.adventuregamers.com/index.php"
+        },
+        {
+          "label": "Rock, Paper, Shotgun",
+          "url": "http://www.rockpapershotgun.com/latest"
+        },
+        {
+          "label": "Adventure Gamers - YouTube",
+          "url": "http://www.youtube.com/user/adventuregamevideos/videos?view=0"
+        },
+        {
+          "label": "itch.io",
+          "url": "http://itch.io/"
+        },
+        {
+          "label": "Hardcore Gaming 101",
+          "url": "http://www.hardcoregaming101.net/"
+        },
+        {
+          "label": "The Very Important List Of PC Games (RPS)",
+          "url": "http://www.rockpapershotgun.com/tag/the-very-important-list-of-pc-games/"
+        }
+      ]
+    },
+    "Flash_Dev": {
+      "title": "Flash_Dev",
+      "kind": "link",
+      "links": [
+        {
+          "label": "FlashPunk Tutorials",
+          "url": "http://thedoglion.wordpress.com/2010/08/07/flashpunk-tutorial-01-how-to-make-your-avatar-move/"
+        },
+        {
+          "label": "Creating your first Flash Professional CS5 document",
+          "url": "http://www.adobe.com/devnet/flash/articles/flash_cs5_createfla.html"
+        },
+        {
+          "label": "Flint",
+          "url": "http://flintparticles.org/examples"
+        },
+        {
+          "label": "feathers - introduction (video)",
+          "url": "http://www.gotoandlearn.com/play.php?id=173"
+        },
+        {
+          "label": "feathers - open source ui components...",
+          "url": "http://feathersui.com/"
+        },
+        {
+          "label": "Starling - Tutorials &amp; Code Snippets",
+          "url": "http://wiki.starling-framework.org/tutorials/start"
+        },
+        {
+          "label": "FlashDevelop",
+          "url": "http://www.flashdevelop.org/wikidocs/index.php?title=Main_Page"
+        },
+        {
+          "label": "FlashPunk",
+          "url": "http://flashpunk.net/"
+        },
+        {
+          "label": "Combining animation and ActionScript using Flash Professional CS5 and Flash Builder 4 | Adobe",
+          "url": "http://www.adobe.com/devnet/flash/articles/animation_flash_fbuilder.html"
+        },
+        {
+          "label": "GameDojo",
+          "url": "http://flashgamedojo.com/go/"
+        },
+        {
+          "label": "Adobe Flash Platform - as3 dev guide",
+          "url": "http://help.adobe.com/en_US/as3/dev/"
+        },
+        {
+          "label": "Kongregate Labs",
+          "url": "http://www.kongregate.com/labs"
+        },
+        {
+          "label": "Violet UML",
+          "url": "http://alexdp.free.fr/violetumleditor/page.php"
+        },
+        {
+          "label": "Zoe - A stand alone tool for exporting...",
+          "url": "http://createjs.com/#!/Zoe"
+        },
+        {
+          "label": "Victorian Giotto",
+          "url": "http://vectorian.com/giotto/"
+        },
+        {
+          "label": "Google Swiffy (swf to html5)",
+          "url": "http://en.wikipedia.org/wiki/Google_Swiffy"
+        },
+        {
+          "label": "C# Code for Reading Flash (SWF) Files",
+          "url": "http://blogs.msdn.com/b/mswanson/archive/2006/10/15/example-c-code-for-reading-flash-swf-files.aspx"
+        },
+        {
+          "label": "Yeah, but is it Flash?",
+          "url": "http://www.yeahbutisitflash.com/"
+        },
+        {
+          "label": "SWF File Format Reference",
+          "url": "http://www.m2osw.com/swf_alexref.html"
+        },
+        {
+          "label": "Swf.Net",
+          "url": "http://swf.codeplex.com/SourceControl/latest"
+        },
+        {
+          "label": "Kurst SWF Renderer",
+          "url": "http://swfrenderer.kurst.co.uk/"
+        },
+        {
+          "label": "SWF Decompilers",
+          "url": "http://bruce-lab.blogspot.com.es/2010/08/freeswfdecompilers.html"
+        },
+        {
+          "label": "Flash Tools",
+          "url": "http://bruce-lab.blogspot.com.es/p/useful-tools-collection.html"
+        }
+      ]
+    },
+    "Games_Misc": {
+      "title": "Games_Misc",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Yellow light and blue shadows - Shawn Hargreaves Blog - Site Home - MSDN Blogs",
+          "url": "http://blogs.msdn.com/b/shawnhar/archive/2010/09/10/yellow-light-and-blue-shadows.aspx"
+        },
+        {
+          "label": "Level Me Up",
+          "url": "https://itunes.apple.com/us/app/level-me-up-hd!/id330451384?mt=8&amp;ign-mpt=uo%3D4"
+        },
+        {
+          "label": "Sharpludus: Improving Game Development Experience through Software Factories And Domain-Specific Languages",
+          "url": "http://www.cin.ufpe.br/~sharpludus/"
+        },
+        {
+          "label": "SharpLudus",
+          "url": "http://www.codeplex.com/sharpludus"
+        },
+        {
+          "label": "BazaarBot: An Open-Source Economics Engine",
+          "url": "http://www.gamasutra.com/blogs/LarsDoucet/20130603/193491/BazaarBot_An_OpenSource_Economics_Engine.php"
+        },
+        {
+          "label": "Angel Lopez",
+          "url": "http://ajlopez.wordpress.com/"
+        },
+        {
+          "label": "Chores War",
+          "url": "http://www.chorewars.com/"
+        },
+        {
+          "label": "Fabien Sanglard",
+          "url": "http://fabiensanglard.net/"
+        },
+        {
+          "label": "Marketing Advice",
+          "url": "https://www.reddit.com/r/IAmA/comments/3kj5ko/i_am_the_ceo_of_an_indie_game_development_company/"
+        },
+        {
+          "label": "Decca Digital",
+          "url": "http://deccadigital.com/"
+        },
+        {
+          "label": "Things I learned designing a game",
+          "url": "http://gamasutra.com/blogs/KacperKwiatkowski/20150113/233988/7_things_Ive_learnt_from_designing_This_War_of_Mine.php"
+        },
+        {
+          "label": "Sprite database",
+          "url": "http://spritedatabase.net/index.php"
+        },
+        {
+          "label": "The Hobbit - HTML5 experiment",
+          "url": "http://middle-earth.thehobbit.com/"
+        }
+      ]
+    },
+    "haxe": {
+      "title": "haxe",
+      "kind": "link",
+      "links": [
+        {
+          "label": "FlashDevelop to iPad Workflow",
+          "url": "http://kpulv.com/115/FlashDevelop_to_iPad_Workflow/"
+        },
+        {
+          "label": "Haxe Console",
+          "url": "https://github.com/ProG4mr/gconsole"
+        },
+        {
+          "label": "feathers - haxe bindings",
+          "url": "https://github.com/mikedotalmond/feathers"
+        },
+        {
+          "label": "ralcr (Baluta Cristian)",
+          "url": "https://github.com/ralcr"
+        },
+        {
+          "label": "OpenFL Extension (2)",
+          "url": "http://labe.me/en/blog/posts/2013-06-24-OpenFL-extension-2.html#.UcstUvnvt8E"
+        },
+        {
+          "label": "ncannasse",
+          "url": "https://github.com/ncannasse"
+        },
+        {
+          "label": "OpenFL Extension (1)",
+          "url": "http://labe.me/en/blog/posts/2013-06-19-OpenFL%20simple%20extension.html"
+        },
+        {
+          "label": "Various files formats support for Haxe",
+          "url": "https://github.com/HaxeFoundation/format"
+        },
+        {
+          "label": "Tiny Text Worlds",
+          "url": "http://nickholder.wordpress.com/2013/02/12/tiny-text-worlds/"
+        }
+      ]
+    },
+    "My_Docs": {
+      "title": "My_Docs",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Inspirations pour dessiner",
+          "url": "https://docs.google.com/document/d/1Bmt6pBmG0O-3fpN50Dcu2BcR8-PXjEUMg4uuPUAwfqk/edit"
+        },
+        {
+          "label": "Tropes pour jeux",
+          "url": "https://docs.google.com/document/d/1DyjjHrM98cE41_ocIv5NIc1xe71gO4p3S5EwwTobnI4/edit?hl=en_US"
+        },
+        {
+          "label": "Idées porteuses (mécanique de jeu)",
+          "url": "https://docs.google.com/document/d/1t78PXyREXC-HQiF7S0nxnrvQ2C82_dD0wqqHaBSOUKA/edit?hl=en_US"
+        },
+        {
+          "label": "Moon Limbo",
+          "url": "https://docs.google.com/document/d/1MZ3FzXEuZPfP9vhZwI06IMyMQ4usGNxMP9vXGl30m54/edit"
+        },
+        {
+          "label": "*Scaffolder",
+          "url": "https://docs.google.com/document/d/1DPqglj5oaxfChVUjyL5wHLPaC7-QWntUJ0vtoRW0KMs/edit"
+        },
+        {
+          "label": "GDD - Delta Moonsun",
+          "url": "https://docs.google.com/document/d/10eRiXQv3YT17I31VgK3-v3kabanA_Fo-PIvymRiQEQM/edit#heading=h.bxeiarcpy9sd"
+        }
+      ]
+    },
+    "iOS": {
+      "title": "iOS",
+      "kind": "link",
+      "links": [
+        {
+          "label": "iPhone Tutorials (good)",
+          "url": "http://www.raywenderlich.com/tutorials"
+        },
+        {
+          "label": "RAYWENDERLICH",
+          "url": "http://www.raywenderlich.com/"
+        },
+        {
+          "label": "Try Objective-C",
+          "url": "http://www.codeschool.com/courses/try-objective-c"
+        },
+        {
+          "label": "cocos2D for win32",
+          "url": "http://www.cocos2d-x.org/projects/cocos2d-x/wiki/Cocos2d-x_Application_Wizard_for_Visual_Studio_User_Guide"
+        },
+        {
+          "label": "iPhone Web App",
+          "url": "http://www.jamiebutler.com/tutorials/iphone_web.php#13"
+        },
+        {
+          "label": "Native looking ios webapp",
+          "url": "http://matt.might.net/articles/how-to-native-iphone-ipad-apps-in-javascript/"
+        },
+        {
+          "label": "Building an App for Both Windows Phone and iOS",
+          "url": "http://msdn.microsoft.com/en-us/magazine/jj658972.aspx"
+        },
+        {
+          "label": "apple: Start Developing iOS Apps Today",
+          "url": "http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/chapters/Introduction.html"
+        }
+      ]
+    },
+    "After_Effects": {
+      "title": "After_Effects",
+      "kind": "link",
+      "links": [
+        {
+          "label": "After Effects image stabilization on...",
+          "url": "https://www.youtube.com/watch?v=MjOa6cZasa0"
+        },
+        {
+          "label": "After Effects - Motion Stabilizing",
+          "url": "https://www.youtube.com/watch?v=dqROUdMlKI8"
+        },
+        {
+          "label": "Sheetah - Extending After Effects for game development",
+          "url": "http://www.indiedb.com/games/in-between/features/sheetah-extendingafter-effects-for-gamedevelopment"
+        },
+        {
+          "label": "Faking Motion Capture in AE",
+          "url": "https://vimeo.com/32371658"
+        },
+        {
+          "label": "MotionScript",
+          "url": "http://www.motionscript.com/design-guide/toc.html"
+        },
+        {
+          "label": "Create A Cartoon In After Effects",
+          "url": "https://vimeo.com/album/1603446"
+        }
+      ]
+    },
+    "My_Sites": {
+      "title": "My_Sites",
+      "kind": "link",
+      "links": [
+        {
+          "label": "gauchedroite.com (google apps)",
+          "url": "https://www.google.com/a/cpanel/gauchedroite.com/CPanelHome#CPanelHome"
+        },
+        {
+          "label": "Google Apps Script",
+          "url": "https://developers.google.com/apps-script/"
+        },
+        {
+          "label": "google app engine",
+          "url": "https://appengine.google.com/"
+        },
+        {
+          "label": "google code",
+          "url": "https://code.google.com/p/ctrepanier/source/browse/#svn%2Ftrunk"
+        },
+        {
+          "label": "Mr. Snippet",
+          "url": "http://ctrepanier.blogspot.com/"
+        },
+        {
+          "label": "gauchedroite.com (namecheap)",
+          "url": "https://manage.www.namecheap.com/myaccount/modsingle.asp?domain=gauchedroite.com&amp;type=hosts&amp;rkey=NC"
+        },
+        {
+          "label": "gauchedroite.com",
+          "url": "http://www.gauchedroite.com/"
+        }
+      ]
+    },
+    "Programming": {
+      "title": "Programming",
+      "kind": "link",
+      "links": [
+        {
+          "label": "Debugging Python in Google App Engine...",
+          "url": "http://4a47.blogspot.ca/2012/11/debugging-python-in-google-app-engine.html"
+        },
+        {
+          "label": "Python Tools for Visual Studio",
+          "url": "http://visualstudiogallery.msdn.microsoft.com/9ea113de-a009-46cd-99f5-65ef0595f937?SRC=VSIDE"
+        },
+        {
+          "label": "Mindscape Visual Studio File Explorer",
+          "url": "http://visualstudiogallery.msdn.microsoft.com/7193af78-b06e-48dd-8994-9deb2bfa1959"
+        },
+        {
+          "label": "Knockout MVC - Visual Studio Extension",
+          "url": "http://visualstudiogallery.msdn.microsoft.com/e980098c-10b5-4535-b7f1-f0c47193c595"
+        },
+        {
+          "label": "NVIDIA Nsight Visual Studio Edition",
+          "url": "http://visualstudiogallery.msdn.microsoft.com/00641371-017c-4616-a3e2-5e7f9974abbd"
+        },
+        {
+          "label": "Isolating Code Under Test with Microsoft Fakes",
+          "url": "http://msdn.microsoft.com/en-us/library/hh549175(v=vs.110).aspx"
+        },
+        {
+          "label": "Visual Studio 2010 Moles x64 - Isolation Framework for .NET",
+          "url": "http://visualstudiogallery.msdn.microsoft.com/22c07bda-ffc9-479a-9766-bfd6ccacabd4"
+        }
+      ]
+    },
+    "3D": {
+      "title": "3D",
+      "kind": "link",
+      "links": [
+        {
+          "label": "WebGL 101 (videos)",
+          "url": "http://my.opera.com/emoller/blog/2012/02/29/webgl-101"
+        },
+        {
+          "label": "Getting Started with threejs",
+          "url": "http://www.aerotwist.com/tutorials/getting-started-with-three-js/"
+        }
+      ]
     }
   }
 }
