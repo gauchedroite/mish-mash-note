@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Text;
 using System.Text.Json;
 
 var root = AppContext.BaseDirectory;
@@ -55,6 +56,27 @@ app.MapGet("/index.html", () => Results.File(Path.Combine(root, "index.html"), "
 
 app.MapGet("/api/data", () => Results.File(dataPath, "application/json"));
 app.MapGet("/api/root", () => Results.Text(root));
+
+app.MapGet("/api/title", async (string? url) =>
+{
+    if (string.IsNullOrWhiteSpace(url) || !Uri.TryCreate(url, UriKind.Absolute, out var u) || !u.IsAbsoluteUri) return Results.Json(new { title = "" });
+    try
+    {
+        using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(8) };
+        http.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (compatible; mish-mash-note/1.0)");
+        using var resp = await http.GetAsync(u);
+        using var rs = await resp.Content.ReadAsStreamAsync();
+        using var sr = new StreamReader(rs);
+        var len = 0; var buf = new char[65536]; var sb = new StringBuilder();
+        int n;
+        while ((n = sr.Read(buf, 0, buf.Length)) > 0) { sb.Append(buf, 0, n); len += n; if (len > 262144) break; }
+        var html = sb.ToString();
+        var m = System.Text.RegularExpressions.Regex.Match(html, "<title[^>]*>(.*?)</title>", System.Text.RegularExpressions.RegexOptions.IgnoreCase | System.Text.RegularExpressions.RegexOptions.Singleline);
+        var title = m.Success ? System.Net.WebUtility.HtmlDecode(m.Groups[1].Value.Trim()) : "";
+        return Results.Json(new { title });
+    }
+    catch { return Results.Json(new { title = "" }); }
+});
 app.MapGet("/api/datafile", () => Results.File(dataPath, "text/plain; charset=utf-8"));
 
 app.MapGet("/api/list", (string? path) =>
