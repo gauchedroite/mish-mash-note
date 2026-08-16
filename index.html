@@ -142,7 +142,10 @@ async function renderGroups(){
         if(!label){try{label=new URL(url).hostname;}catch{label=url;}}
         const ans=prompt('Add link to "'+g.title+'":',label);
         if(!ans) return;
-        DATA.groups[g.id].links.push({label:ans,url});
+        const item={label:ans,url};
+        const tgt=DATA.groups[g.id].links;
+        const pos=(!g.sort||g.sort==='manual') ? ((groupPage[i]||0)*(g.max||0)+dropIndex(box,e.clientY,tgt)) : sortedPos(tgt,g.sort,item);
+        tgt.splice(pos,0,item);
         if(!(await fetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(DATA)})).ok){alert('save failed');return;}
         renderGroups();
       });
