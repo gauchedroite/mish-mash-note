@@ -116,13 +116,20 @@ async function renderGroups(){
         const move=e.dataTransfer.getData('application/x-mish-link');
         if(move){
           const m=JSON.parse(move);
-          if(m.group===g.id) return;
           const src=DATA.groups[m.group];
           const item=src.links[m.idx];
           if(!item) return;
           src.links.splice(m.idx,1);
           const tgt=DATA.groups[g.id].links;
-          const pos = g.sort==='manual' ? ((groupPage[i]||0)*g.max + dropIndex(box,e.clientY,tgt)) : sortedPos(tgt,g.sort,item);
+          let pos;
+          if(m.group===g.id){
+            // same-group reorder: only meaningful for manual
+            if(g.sort && g.sort!=='manual') return;
+            pos=(groupPage[i]||0)*(g.max||0)+dropIndex(box,e.clientY,tgt);
+            if(m.idx<pos) pos--;
+          } else {
+            pos = (!g.sort||g.sort==='manual') ? ((groupPage[i]||0)*(g.max||0)+dropIndex(box,e.clientY,tgt)) : sortedPos(tgt,g.sort,item);
+          }
           tgt.splice(pos,0,item);
           if(!(await fetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(DATA)})).ok){alert('save failed');return;}
           renderGroups();
