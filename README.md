@@ -42,7 +42,7 @@ Rebuild after editing source: `dotnet publish -c Release -o publish`
   "pages": [{
     "id": "home", "title": "Home",
     "groups": [
-      { "id": "notes", "max": 5, "sort": "manual", "title": "Pinned" }  // optional title overrides the group's title
+      { "id": "notes", "max": 5, "sort": "manual", "title": "Pinned", "background": "#e0e0ff" }  // optional title/background override the group's
     ]
   }],
   "groups": {
@@ -56,6 +56,8 @@ Rebuild after editing source: `dotnet publish -c Release -o publish`
 }
 // max: items per page, 0 = no paging  (set per page-group entry)
 // sort: "manual" (order field), "alpha", "alpha-desc", "modified" (newest), "modified-asc" (oldest), "reverse"  (per page-group entry)
+// background: h2 background color, any CSS value (per page-group entry)
+// color: h2 text color, any CSS value (per page-group entry)
 ```
 
 Single-user, localhost:9341. The path guard in `Program.cs` only prevents

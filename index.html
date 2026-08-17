@@ -1,5 +1,5 @@
 <!doctype html>
-<html><head><meta charset="utf-8"><title>notes</title>
+<html><head><meta charset="utf-8"><title>Mish-Mash</title>
 <style>
   body{font:14px/1.5 system-ui,sans-serif;margin:0;padding:0;color:#222}
   header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ddd;padding:2px 16px;margin-bottom:16px;background:bisque;position:sticky;top:0;z-index:10}
@@ -13,8 +13,7 @@
   .page-tabs button{padding:4px 10px;margin-right:6px;cursor:pointer}
   .page-tabs button.active{font-weight:bold}
   .group{padding:0;margin-bottom:8px;break-inside:avoid}
-  .group h2{font-size:15px;margin:0;display:flex;justify-content:space-between;align-items:center;background:antiquewhite}
-  .group .meta{font-size:12px;color:#888;font-weight:normal}
+  .group h2{font-size:15px;margin:0;display:flex;justify-content:space-between;align-items:center;background:antiquewhite;padding:0 2px}  .group .meta{font-size:12px;color:#888;font-weight:normal}
   ul{list-style:none;padding:0;margin:0}
   li{display:flex;gap:8px;align-items:center;min-width:0;line-height:1.2}
   li a{color:#0366d6;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
@@ -39,7 +38,7 @@
   <div style="font-size:11px;color:#888;margin-top:6px">Ctrl+S to save &nbsp;|&nbsp; sort options: A–Z (alpha), Z–A (alpha-desc), newest (modified), oldest (modified-asc), reverse, manual</div>
 </div></div>
 <script>
-let DATA={}, curPage=null, edPath=null, edMode='file', groupPage={}, listCache={};
+let DATA={}, curPage=null, edPath=null, edMode='file', groupPage={}, listCache={}, lastClicked=null;
 
 const $=s=>document.querySelector(s);
 const sortLabel={alpha:'A–Z','alpha-desc':'Z–A',modified:'newest','modified-asc':'oldest',reverse:'reverse'};
@@ -100,6 +99,8 @@ async function renderGroups(){
     const meta=document.createElement('span'); meta.className='meta'; meta.textContent=sortLabel[g.sort]||'';
     h.innerHTML=`<span>${g.title}</span>`;
     h.appendChild(meta);
+    if(g.background) h.style.background=g.background;
+    if(g.color) h.style.color=g.color;
     if(g.kind==='file'){
       h.style.cursor='pointer'; h.title='Open folder';
       h.querySelector('span').onclick=()=>fetch('/api/open?path='+encodeURIComponent(g.dir));
@@ -179,9 +180,12 @@ async function renderGroups(){
         li.draggable=true;
         li.addEventListener('dragstart',e=>{e.dataTransfer.setData('application/x-mish-link',JSON.stringify({group:g.id,idx:l._idx}));e.dataTransfer.effectAllowed='move';});
         const a=document.createElement('a'); a.href=l.url; a.target='_blank'; a.textContent=l.label; a.draggable=false;
+        let ct=null;
+        a.onclick=e=>{e.preventDefault();if(e.detail>1){clearTimeout(ct);ct=null;return;}ct=setTimeout(()=>window.open(l.url,'_blank'),220);markClicked(a);};
+        a.ondblclick=async e=>{e.preventDefault();clearTimeout(ct);const ans=prompt('Rename link:',l.label);if(ans==null||ans===l.label)return;DATA.groups[g.id].links[l._idx].label=ans;if(!(await fetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(DATA)})).ok){alert('save failed');return;}const y=scrollY;renderGroups().then(()=>scrollTo(0,y));};
         li.appendChild(a);
         const del=document.createElement('a'); del.className='del'; del.href='#'; del.textContent='\u00d7'; del.title='delete link';
-        del.onclick=async e=>{e.preventDefault();if(!confirm('Delete "'+l.label+'" from "'+g.title+'"?'))return;DATA.groups[g.id].links.splice(l._idx,1);if(!(await fetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(DATA)})).ok){alert('save failed');return;}renderGroups();};
+        del.onclick=async e=>{e.preventDefault();if(!confirm('Delete "'+l.label+'" from "'+g.title+'"?'))return;DATA.groups[g.id].links.splice(l._idx,1);if(!(await fetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(DATA)})).ok){alert('save failed');return;}const y=scrollY;renderGroups().then(()=>scrollTo(0,y));};
         li.appendChild(del);
       } else {
         const a=document.createElement('a'); a.href='#'; a.textContent=l.label;
@@ -244,6 +248,8 @@ $('#ed-text').addEventListener('keydown',e=>{
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape'&&$('#overlay').classList.contains('show')){$('#ed-cancel').click();}
 });
+
+const markClicked=el=>{if(lastClicked&&lastClicked!==el)lastClicked.style.background='';el.style.background='gold';lastClicked=el;};
 
 async function addFile(g){
   const name=prompt('New file name (e.g. idea):');
