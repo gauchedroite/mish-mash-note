@@ -222,7 +222,7 @@ async function openDataJson(){
   $('#overlay').classList.add('show');
 }
 $('#edit-data').onclick=openDataJson;
-$('#open-app').onclick=async()=>fetch('/api/open?path='+encodeURIComponent(await (await fetch('/api/root')).json()));
+$('#open-app').onclick=async()=>fetch('/api/open?path='+encodeURIComponent(await (await fetch('/api/root')).text()));
 
 $('#ed-save').onclick=async()=>{
   const url=edMode==='data'?'/api/datafile':'/api/file?path='+encodeURIComponent(edPath);
