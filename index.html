@@ -15,7 +15,7 @@
   .group{padding:0;margin-bottom:8px;break-inside:avoid}
   .group h2{font-size:15px;margin:0;display:flex;justify-content:space-between;align-items:center;background:antiquewhite;padding:0 2px}  .group .meta{font-size:12px;color:#888;font-weight:normal}
   ul{list-style:none;padding:0;margin:0}
-  li{display:flex;gap:8px;align-items:center;min-width:0;line-height:1.2}
+  li{display:flex;gap:0;align-items:center;min-width:0;line-height:1.2}
   li a{color:#0366d6;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
   li a:hover{text-decoration:underline}
   .btn{font-size:12px;padding:2px 8px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fafafa}
@@ -27,8 +27,8 @@
   #editor .bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
   .hidden{display:none}
   .group.dragover{outline:2px dashed #0366d6;outline-offset:-2px;background:#eef4fb}
-  li .del{font-size:12px;color:#c00;cursor:pointer;opacity:0;text-decoration:none;margin-left:auto;padding:0 2px}
-  li:hover .del{opacity:1}
+  li .del,li .rn{font-size:12px;color:#c00;cursor:pointer;opacity:0;text-decoration:none;padding:0 2px}li .rn{margin-left:auto}
+  li:hover .del,li:hover .rn{opacity:1}
 </style></head><body>
 <header><div class="inner"><div class="tabs" id="pages"></div><span><button class="btn" id="open-app">app folder</button> <button class="btn" id="edit-data">edit data.json</button></span></div></header>
 <div class="wrap"><div id="groups"></div></div>
@@ -38,7 +38,7 @@
   <div style="font-size:11px;color:#888;margin-top:6px">Ctrl+S to save &nbsp;|&nbsp; sort options: A–Z (alpha), Z–A (alpha-desc), newest (modified), oldest (modified-asc), reverse, manual</div>
 </div></div>
 <script>
-let DATA={}, curPage=null, edPath=null, edMode='file', groupPage={}, listCache={};
+let DATA={}, curPage=null, edPath=null, edMode='file', groupPage={}, listCache={}, lastClicked=null;
 
 const $=s=>document.querySelector(s);
 const sortLabel={alpha:'A–Z','alpha-desc':'Z–A',modified:'newest','modified-asc':'oldest',reverse:'reverse'};
@@ -179,8 +179,11 @@ async function renderGroups(){
       if(g.kind==='link'){
         li.draggable=true;
         li.addEventListener('dragstart',e=>{e.dataTransfer.setData('application/x-mish-link',JSON.stringify({group:g.id,idx:l._idx}));e.dataTransfer.effectAllowed='move';});
-        const a=document.createElement('a'); a.href=l.url; a.textContent=l.label;
+        const a=document.createElement('a'); a.href=l.url; a.textContent=l.label; a.onclick=()=>markClicked(a);
         li.appendChild(a);
+        const rn=document.createElement('a'); rn.className='rn'; rn.href='#'; rn.textContent='\u270e'; rn.title='rename link';
+        rn.onclick=async e=>{e.preventDefault();const ans=prompt('Rename link:',l.label);if(ans==null||ans===l.label)return;DATA.groups[g.id].links[l._idx].label=ans;if(!(await fetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(DATA)})).ok){alert('save failed');return;}const y=scrollY;renderGroups().then(()=>scrollTo(0,y));};
+        li.appendChild(rn);
         const del=document.createElement('a'); del.className='del'; del.href='#'; del.textContent='\u00d7'; del.title='delete link';
         del.onclick=async e=>{e.preventDefault();if(!confirm('Delete "'+l.label+'" from "'+g.title+'"?'))return;DATA.groups[g.id].links.splice(l._idx,1);if(!(await fetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(DATA)})).ok){alert('save failed');return;}const y=scrollY;renderGroups().then(()=>scrollTo(0,y));};
         li.appendChild(del);
@@ -245,6 +248,8 @@ $('#ed-text').addEventListener('keydown',e=>{
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape'&&$('#overlay').classList.contains('show')){$('#ed-cancel').click();}
 });
+
+const markClicked=el=>{if(lastClicked&&lastClicked!==el)lastClicked.style.background='';el.style.background='gold';lastClicked=el;};
 
 async function addFile(g){
   const name=prompt('New file name (e.g. idea):');
