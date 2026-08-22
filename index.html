@@ -38,7 +38,7 @@
   <div style="font-size:11px;color:#888;margin-top:6px">Ctrl+S to save &nbsp;|&nbsp; sort options: A–Z (alpha), Z–A (alpha-desc), newest (modified), oldest (modified-asc), reverse, manual</div>
 </div></div>
 <script>
-let DATA={}, curPage=null, edPath=null, edMode='file', groupPage={}, listCache={}, lastClicked=null;
+let DATA={}, curPage=null, edPath=null, edMode='file', groupPage={}, listCache={};
 
 const $=s=>document.querySelector(s);
 const sortLabel={alpha:'A–Z','alpha-desc':'Z–A',modified:'newest','modified-asc':'oldest',reverse:'reverse'};
@@ -179,10 +179,7 @@ async function renderGroups(){
       if(g.kind==='link'){
         li.draggable=true;
         li.addEventListener('dragstart',e=>{e.dataTransfer.setData('application/x-mish-link',JSON.stringify({group:g.id,idx:l._idx}));e.dataTransfer.effectAllowed='move';});
-        const a=document.createElement('a'); a.href=l.url; a.target='_blank'; a.textContent=l.label; a.draggable=false;
-        let ct=null;
-        a.onclick=e=>{e.preventDefault();if(e.detail>1){clearTimeout(ct);ct=null;return;}ct=setTimeout(()=>window.open(l.url,'_blank'),220);markClicked(a);};
-        a.ondblclick=async e=>{e.preventDefault();clearTimeout(ct);const ans=prompt('Rename link:',l.label);if(ans==null||ans===l.label)return;DATA.groups[g.id].links[l._idx].label=ans;if(!(await fetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(DATA)})).ok){alert('save failed');return;}const y=scrollY;renderGroups().then(()=>scrollTo(0,y));};
+        const a=document.createElement('a'); a.href=l.url; a.textContent=l.label;
         li.appendChild(a);
         const del=document.createElement('a'); del.className='del'; del.href='#'; del.textContent='\u00d7'; del.title='delete link';
         del.onclick=async e=>{e.preventDefault();if(!confirm('Delete "'+l.label+'" from "'+g.title+'"?'))return;DATA.groups[g.id].links.splice(l._idx,1);if(!(await fetch('/api/data',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(DATA)})).ok){alert('save failed');return;}const y=scrollY;renderGroups().then(()=>scrollTo(0,y));};
@@ -248,8 +245,6 @@ $('#ed-text').addEventListener('keydown',e=>{
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape'&&$('#overlay').classList.contains('show')){$('#ed-cancel').click();}
 });
-
-const markClicked=el=>{if(lastClicked&&lastClicked!==el)lastClicked.style.background='';el.style.background='gold';lastClicked=el;};
 
 async function addFile(g){
   const name=prompt('New file name (e.g. idea):');
